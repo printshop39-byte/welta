@@ -1,0 +1,1792 @@
+[
+  {
+    "sourceId": "0116d558-9c5e-437f-aad8-3b71cac34444",
+    "name": "3D CHANDERI",
+    "category": "Kurta",
+    "salesPrice": 2855.95,
+    "mrp": 2999,
+    "stock": 13,
+    "visible": false,
+    "reasons": [
+      "not visible on online store"
+    ]
+  },
+  {
+    "sourceId": "a40ad873-d087-44ab-8a25-ce5659f4e743",
+    "name": "3D DYE24",
+    "category": "KURTA",
+    "salesPrice": 5800,
+    "mrp": 5800,
+    "stock": 1,
+    "visible": false,
+    "reasons": [
+      "not visible on online store"
+    ]
+  },
+  {
+    "sourceId": "6b735bc9-f123-415a-ad42-5a0785f8cd52",
+    "name": "3D WHITE 24",
+    "category": "KURTA",
+    "salesPrice": 0,
+    "mrp": 5400,
+    "stock": 2,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "bc20b8bd-1910-4c77-8263-2951270b131e",
+    "name": "3 PC MUL SET24",
+    "category": "SET",
+    "salesPrice": 3600,
+    "mrp": 3600,
+    "stock": 0,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative stock"
+    ]
+  },
+  {
+    "sourceId": "0121d9d2-5316-466e-a40a-005604d540f1",
+    "name": "ALATARATION",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 50,
+    "stock": -1,
+    "visible": true,
+    "reasons": [
+      "non-product (alteration/gift card/blank name)",
+      "zero or negative sales price",
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "abb7168d-ac8f-4bf5-a555-481a83770c7e",
+    "name": "ALTARATION",
+    "category": "",
+    "salesPrice": 50,
+    "mrp": 0,
+    "stock": 0,
+    "visible": true,
+    "reasons": [
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "8a2dc4bb-7659-4b0a-a977-da0b4336420f",
+    "name": "ANGARAKHA JAALI",
+    "category": "Kurta",
+    "salesPrice": 0,
+    "mrp": 1999,
+    "stock": 6,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "8f9bd5f9-7e45-4c54-a93b-edaf96c594eb",
+    "name": "BABY EM",
+    "category": "",
+    "salesPrice": 600,
+    "mrp": 0,
+    "stock": 0,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "636f06ab-7933-4835-96db-cc68c3dea613",
+    "name": "BABY EM",
+    "category": "",
+    "salesPrice": 600,
+    "mrp": 1000,
+    "stock": 34,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "39e82c9a-0767-435d-a3f7-9901f38e8d4d",
+    "name": "BAGS",
+    "category": "",
+    "salesPrice": 700,
+    "mrp": 999,
+    "stock": 44,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "d088d1b0-7d96-424e-83b6-a0fe3baca618",
+    "name": "BLACK EXPORT  BLACK PINK",
+    "category": "KURTA",
+    "salesPrice": 4400,
+    "mrp": 4400,
+    "stock": 16,
+    "visible": false,
+    "reasons": [
+      "not visible on online store"
+    ]
+  },
+  {
+    "sourceId": "92af2747-9095-4a4f-aced-d5c51da3691e",
+    "name": "BLACK EXPORT HEAVY DESIGN",
+    "category": "",
+    "salesPrice": 4400,
+    "mrp": 4400,
+    "stock": 3,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "8553d8a7-eee1-4266-ad10-820832b2dea4",
+    "name": "BOOTA Saree",
+    "category": "",
+    "salesPrice": 3500,
+    "mrp": 3500,
+    "stock": -1,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "7b4a2cae-714d-496e-a5ef-4e4f94592a81",
+    "name": "CGHANDERI PURE PINK KURTIE",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 7400,
+    "stock": 4,
+    "visible": true,
+    "reasons": [
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "42139d07-07e1-491a-8f95-9e250ab70265",
+    "name": "Chanderi 3p set",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 3999,
+    "stock": 20,
+    "visible": true,
+    "reasons": [
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "4bf35c68-9d25-43d6-b1b6-e90cbe65ca4e",
+    "name": "CHANDERI BAKHIYA",
+    "category": "Kurta",
+    "salesPrice": 0,
+    "mrp": 1549,
+    "stock": 6,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "40f38077-d169-4aff-8947-8f00571b1c13",
+    "name": "chanderi non stich",
+    "category": "",
+    "salesPrice": 2800,
+    "mrp": 7000,
+    "stock": 4,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "604d8469-c2cb-4c22-862d-96adaca08281",
+    "name": "CHANDERI SILK WITH LINING",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 7400,
+    "stock": 2,
+    "visible": true,
+    "reasons": [
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "37294937-90f3-438a-aca9-8f49c3f511a7",
+    "name": "CHANDERI SILK WITH MUKESH",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 6200,
+    "stock": 2,
+    "visible": true,
+    "reasons": [
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "8e82d83d-870d-4f24-9196-87d800de3a47",
+    "name": "CHIC TOP RI",
+    "category": "Kurtis, Tunic , top",
+    "salesPrice": 0,
+    "mrp": 2199,
+    "stock": -1,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price",
+      "zero or negative stock"
+    ]
+  },
+  {
+    "sourceId": "96229f4f-49f4-421d-903c-b68a5a4f57b1",
+    "name": "clearance Viscose",
+    "category": "",
+    "salesPrice": 2500,
+    "mrp": 4500,
+    "stock": -1,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "48b37fc7-8f30-408d-bae7-2d1229bbe9a1",
+    "name": "CO ANGARAKHA MUKES",
+    "category": "Kurta",
+    "salesPrice": 0,
+    "mrp": 1999,
+    "stock": 11,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "74c1d2e9-df87-4a07-833f-ebe59eae2cb9",
+    "name": "COLIN",
+    "category": "Kurtis, Tunic , top",
+    "salesPrice": 0,
+    "mrp": 3236,
+    "stock": 10,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "228d857a-c10c-4581-adab-15318b5637b7",
+    "name": "CO SHORT SADED",
+    "category": "Kurta",
+    "salesPrice": 0,
+    "mrp": 999,
+    "stock": 19,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "7ce8f192-742d-43fd-96a5-004edce42534",
+    "name": "Cotton Angharakha 13",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 3800,
+    "stock": 1,
+    "visible": true,
+    "reasons": [
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "1b2d1c08-3624-4b73-b520-f51d2b094c86",
+    "name": "Cotton plazo",
+    "category": "Bottom",
+    "salesPrice": 0,
+    "mrp": 999,
+    "stock": 5,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "528b2091-53f1-48a6-95f0-4904de65c7ea",
+    "name": "COTTON PLAZO SET",
+    "category": "Set",
+    "salesPrice": 0,
+    "mrp": 1999,
+    "stock": 5,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "313b3ef0-c977-45be-ba83-1eeec596441c",
+    "name": "COTTON SAREE",
+    "category": "SAREE",
+    "salesPrice": 1500,
+    "mrp": 1700,
+    "stock": 4,
+    "visible": false,
+    "reasons": [
+      "not visible on online store"
+    ]
+  },
+  {
+    "sourceId": "e23dabf8-363a-4c69-a959-9e71f2cc48c8",
+    "name": "COTTON SET 24",
+    "category": "SET",
+    "salesPrice": 0,
+    "mrp": 0,
+    "stock": 4,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "54110d11-f381-4236-9881-4fd5b3947758",
+    "name": "COTTON SUR",
+    "category": "",
+    "salesPrice": 500,
+    "mrp": 999,
+    "stock": 8,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "9f8ca570-5c2c-4c62-b7ec-7b4bf04884c4",
+    "name": "Cotton Tepchi saree",
+    "category": "",
+    "salesPrice": 4000,
+    "mrp": 7650,
+    "stock": 2,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "7166982a-1381-4802-a32e-11857f40ebee",
+    "name": "CREDIT AMOUNT",
+    "category": "",
+    "salesPrice": 1161,
+    "mrp": 0,
+    "stock": 5,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "cc99d990-d897-4d56-bd29-963f0aeadd02",
+    "name": "DENIM DRESS4001",
+    "category": "",
+    "salesPrice": 1200,
+    "mrp": 1599,
+    "stock": 5,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "6e6e46a5-38e8-4dbd-b64e-05ce13fd890f",
+    "name": "DENIM DRESS4001",
+    "category": "",
+    "salesPrice": 1200,
+    "mrp": 1599,
+    "stock": 4,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "8e221c53-0489-4ba1-aab3-42341cde0039",
+    "name": "DESIGN NO 27",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 0,
+    "stock": 5,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "0e803f64-4299-4dca-96c6-a31b7241dcc1",
+    "name": "DESIGN NO 30 STRAIGHT COTTON",
+    "category": "Kurtis, Tunic , top",
+    "salesPrice": 2476,
+    "mrp": 2476,
+    "stock": 3,
+    "visible": false,
+    "reasons": [
+      "not visible on online store"
+    ]
+  },
+  {
+    "sourceId": "8687db19-60c6-475e-8ae0-4a603278bb2a",
+    "name": "DESIGN NO 64 COLIN",
+    "category": "Kurtis, Tunic , top",
+    "salesPrice": 3236,
+    "mrp": 3236,
+    "stock": 3,
+    "visible": false,
+    "reasons": [
+      "not visible on online store"
+    ]
+  },
+  {
+    "sourceId": "8430d1b7-8bc8-44ee-8de8-b61e71d072e5",
+    "name": "DESIGN NO 66",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 0,
+    "stock": 0,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price",
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "f426eca1-1bdd-486a-8b47-868a7bd92267",
+    "name": "DESIGN NO 73 SHOULDER PA",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 0,
+    "stock": 3,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "4184cbed-3e38-43db-8708-fd460ab8df20",
+    "name": "DESIGN NO 78",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 0,
+    "stock": 5,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "e82e0573-f6a7-4978-868e-83362b03a527",
+    "name": "DESIGN NO 78 COLLOURED",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 0,
+    "stock": 7,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "f1bb2336-3e90-4fcf-b8d1-e1e7788e4710",
+    "name": "DESIGN NO 82",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 0,
+    "stock": 5,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "00470d6d-4edf-43e6-8ce2-1cd99be12100",
+    "name": "Dual shade Saree",
+    "category": "",
+    "salesPrice": 1800,
+    "mrp": 2200,
+    "stock": 4,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "240016c9-598f-41a8-836e-888d23a99a30",
+    "name": "DUA MODAL",
+    "category": "Kurta",
+    "salesPrice": 0,
+    "mrp": 1699,
+    "stock": 1,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "b8881e99-c1da-447c-a221-c1f41d5b4267",
+    "name": "DUAPTTA FANCY LINING",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 0,
+    "stock": 15,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "3f20ccf4-c662-48fc-8765-ed9fd76aa1fb",
+    "name": "DUPATTA",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 0,
+    "stock": 20,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "bbfe2561-4924-456d-8292-3b37b03e824a",
+    "name": "FANCY CHANDERI PURE",
+    "category": "Indian and Fusion",
+    "salesPrice": 0,
+    "mrp": 19999,
+    "stock": 2,
+    "visible": true,
+    "reasons": [
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "8a18933c-78fe-4325-b157-bfe5a08d68a5",
+    "name": "FANCY KHADI KURTIES FANCY",
+    "category": "",
+    "salesPrice": 7200,
+    "mrp": 7200,
+    "stock": 7,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "0be54c13-7dea-417f-94a9-fb2018decb44",
+    "name": "FLORAL MUL",
+    "category": "Kurta and suits",
+    "salesPrice": 1300,
+    "mrp": 1300,
+    "stock": 8,
+    "visible": false,
+    "reasons": [
+      "not visible on online store"
+    ]
+  },
+  {
+    "sourceId": "e0f25a2c-8921-4e58-b0ca-5c3818892457",
+    "name": "FREE Welta Bag",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 15,
+    "stock": 991,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "31679cfb-939e-45b9-80bd-b3a3b282fa8e",
+    "name": "Gift Card",
+    "category": "",
+    "salesPrice": 500,
+    "mrp": 0,
+    "stock": 0,
+    "visible": true,
+    "reasons": [
+      "non-product (alteration/gift card/blank name)",
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "9667923e-ba1b-465e-9170-fb1f8157ca87",
+    "name": "GRT SHIRT",
+    "category": "Kurtis, Tunic , top",
+    "salesPrice": 500,
+    "mrp": 500,
+    "stock": 36,
+    "visible": false,
+    "reasons": [
+      "not visible on online store"
+    ]
+  },
+  {
+    "sourceId": "a744c829-a674-4d2d-ac81-e7511e0369b5",
+    "name": "HAYA MODAL",
+    "category": "Kurta",
+    "salesPrice": 0,
+    "mrp": 2699,
+    "stock": 5,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "d10fd4f1-2af8-451a-84ef-9ff3e0ef9dee",
+    "name": "HOC-10",
+    "category": "Kurtis, Tunic , top",
+    "salesPrice": 1900,
+    "mrp": 1900,
+    "stock": -1,
+    "visible": true,
+    "reasons": [
+      "zero or negative stock"
+    ]
+  },
+  {
+    "sourceId": "44cc54a0-8a23-408e-86d0-52e024e1f8b1",
+    "name": "HOC-11",
+    "category": "KURTA SETS",
+    "salesPrice": 1400,
+    "mrp": 3400,
+    "stock": -2,
+    "visible": true,
+    "reasons": [
+      "zero or negative stock"
+    ]
+  },
+  {
+    "sourceId": "d349279a-68a5-482a-a761-472023406525",
+    "name": "HOC-11 DESIGN NO 74",
+    "category": "Kurtis, Tunic , top",
+    "salesPrice": 3400,
+    "mrp": 3400,
+    "stock": 4,
+    "visible": false,
+    "reasons": [
+      "not visible on online store"
+    ]
+  },
+  {
+    "sourceId": "79bea940-bf98-4b63-a98b-c66a75b293b0",
+    "name": "HOC-11 DESIGN NO 74 COLLOURED",
+    "category": "",
+    "salesPrice": 3400,
+    "mrp": 3400,
+    "stock": 2,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "b6b9ffd8-f7ba-4f2a-b1e7-beb491abd79b",
+    "name": "HOC-12",
+    "category": "",
+    "salesPrice": 4600,
+    "mrp": 4600,
+    "stock": 3,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "bf095dd6-9149-4b6a-810d-9bf29de45de4",
+    "name": "HOC-13",
+    "category": "CP-ORD SET",
+    "salesPrice": 3900,
+    "mrp": 3900,
+    "stock": -1,
+    "visible": true,
+    "reasons": [
+      "zero or negative stock"
+    ]
+  },
+  {
+    "sourceId": "da871254-a745-4fa6-b998-4de1deac408a",
+    "name": "HOC-19",
+    "category": "",
+    "salesPrice": 1780,
+    "mrp": 3560,
+    "stock": 2,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "c53e7e62-9cf1-4aa6-b3ca-0606bd9de2b0",
+    "name": "HOC-1 BLUE CORD SET",
+    "category": "",
+    "salesPrice": 3500,
+    "mrp": 3500,
+    "stock": 6,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "cffcf884-093c-4d37-a30f-9fb82ec72326",
+    "name": "hoc-1 cord set pant blue",
+    "category": "Bottoms Pant , plazo",
+    "salesPrice": 1300,
+    "mrp": 1650,
+    "stock": -1,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative stock"
+    ]
+  },
+  {
+    "sourceId": "f6b024ae-d27b-4702-8317-460f6e07f9bf",
+    "name": "HOC-2",
+    "category": "SET",
+    "salesPrice": 1660,
+    "mrp": 3320,
+    "stock": 0,
+    "visible": true,
+    "reasons": [
+      "zero or negative stock"
+    ]
+  },
+  {
+    "sourceId": "266ed66a-4b6a-4da9-99d2-c1d92a67b3d8",
+    "name": "HOC-21",
+    "category": "",
+    "salesPrice": 3360,
+    "mrp": 3360,
+    "stock": 1,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "aed4c655-ec03-4ee3-9fb1-d447275710ed",
+    "name": "HOC-26",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 3500,
+    "stock": 0,
+    "visible": true,
+    "reasons": [
+      "zero or negative sales price",
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "38001299-f845-4261-ad0a-5eaa359c25a4",
+    "name": "HOC-28",
+    "category": "CP-ORD SET",
+    "salesPrice": 3400,
+    "mrp": 3400,
+    "stock": 0,
+    "visible": true,
+    "reasons": [
+      "zero or negative stock"
+    ]
+  },
+  {
+    "sourceId": "aaa5dcc9-626c-4596-b629-b4db4285f019",
+    "name": "HOC-33 DESIGN NO 76",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 0,
+    "stock": 5,
+    "visible": true,
+    "reasons": [
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "840f7e13-b3ca-4d21-9182-7c3029a4c64f",
+    "name": "HOC-33 DESIGN NO 77",
+    "category": "",
+    "salesPrice": 3900,
+    "mrp": 3900,
+    "stock": 2,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "ec06ce1e-0707-4807-86ac-e404f119b02f",
+    "name": "HOC-40",
+    "category": "KURTA",
+    "salesPrice": 1840,
+    "mrp": 1840,
+    "stock": 0,
+    "visible": true,
+    "reasons": [
+      "zero or negative stock"
+    ]
+  },
+  {
+    "sourceId": "205f964c-583c-465c-8207-0e830a2c07f7",
+    "name": "HOC-40 DESIGN NO 79",
+    "category": "",
+    "salesPrice": 3809.52,
+    "mrp": 0,
+    "stock": 4,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "a9ec42ec-9e6a-42ae-9c3b-8d8b823fe72a",
+    "name": "INNER24",
+    "category": "",
+    "salesPrice": 499,
+    "mrp": 499,
+    "stock": 12,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "7f32658f-a3de-416e-8f52-6a83f6b0e83e",
+    "name": "JOURGET SHORT RESHAM FRONT JALL",
+    "category": "Kurtis, Tunic , top",
+    "salesPrice": 0,
+    "mrp": 0,
+    "stock": 0,
+    "visible": true,
+    "reasons": [
+      "zero or negative sales price",
+      "zero or negative stock"
+    ]
+  },
+  {
+    "sourceId": "58f8cd32-4988-40b9-a185-6977379a1a6b",
+    "name": "JULIA MODAL",
+    "category": "Kurta",
+    "salesPrice": 0,
+    "mrp": 2399,
+    "stock": 17,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "0c19fed0-cd80-41b8-9d4f-c09d912467e6",
+    "name": "kaftan",
+    "category": "",
+    "salesPrice": 1000,
+    "mrp": 1999,
+    "stock": -1,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "d1f88d64-dd8f-4179-b901-91cf30f8b1d5",
+    "name": "KID COTTON",
+    "category": "Kids",
+    "salesPrice": 0,
+    "mrp": 1349,
+    "stock": 11,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "b858e187-cf00-4712-bad2-6928126d2801",
+    "name": "KIDS 4001 LALI TOP",
+    "category": "",
+    "salesPrice": 999,
+    "mrp": 1599,
+    "stock": 23,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "51547001-b8e0-4918-b99c-6c1fbe66131a",
+    "name": "KOTA DORIA SHORT",
+    "category": "Kurtis, Tunic , top",
+    "salesPrice": 1899,
+    "mrp": 2150,
+    "stock": 6,
+    "visible": false,
+    "reasons": [
+      "not visible on online store"
+    ]
+  },
+  {
+    "sourceId": "3aa3b7a8-2624-41b7-9e8a-1855d05ed6cd",
+    "name": "KOTA DUPE",
+    "category": "SCARF AND DUPATTA",
+    "salesPrice": 2199,
+    "mrp": 2199,
+    "stock": -1,
+    "visible": true,
+    "reasons": [
+      "zero or negative stock"
+    ]
+  },
+  {
+    "sourceId": "31b1795a-fda9-49a6-a45c-13d21914dd35",
+    "name": "kurta",
+    "category": "",
+    "salesPrice": 140,
+    "mrp": 0,
+    "stock": 600,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "0bee27d6-15bb-46d4-9216-02d3ed3cd923",
+    "name": "Kurta",
+    "category": "",
+    "salesPrice": 300,
+    "mrp": 0,
+    "stock": 0,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "651bc4a3-dd20-4b3d-949b-36e9b1719c0d",
+    "name": "LINEN OMBRE",
+    "category": "Kurta",
+    "salesPrice": 0,
+    "mrp": 1599,
+    "stock": 5,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "b189fb77-1fb1-4b1b-9eef-192afa4e13ea",
+    "name": "linig white",
+    "category": "",
+    "salesPrice": 500,
+    "mrp": 500,
+    "stock": 7,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "9511aebd-3771-4a98-bcaa-d585e4834afb",
+    "name": "LONG KURTA",
+    "category": "",
+    "salesPrice": 200,
+    "mrp": 0,
+    "stock": -100,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "56d8fb7d-75a6-493b-a2be-eb51dd722318",
+    "name": "LuckycharmCLR",
+    "category": "",
+    "salesPrice": 2500,
+    "mrp": 2500,
+    "stock": 37,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "caa09bde-b19a-421e-b694-c3837d00c039",
+    "name": "Lucky Charms Women",
+    "category": "",
+    "salesPrice": 1200,
+    "mrp": 2000,
+    "stock": 17,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "21f45b10-fa5e-40ed-95c0-7d5b0ad1156d",
+    "name": "MALMAL DUPATTA",
+    "category": "Dupatta",
+    "salesPrice": 0,
+    "mrp": 999,
+    "stock": 4,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "b77957db-26bf-4ca4-8ad2-efc5bef848f2",
+    "name": "MODAL New",
+    "category": "",
+    "salesPrice": 2249,
+    "mrp": 2249,
+    "stock": 22,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "f0999a14-3840-47df-8afc-6ffcbd0400aa",
+    "name": "MODAL NEW",
+    "category": "Kurta",
+    "salesPrice": 0,
+    "mrp": 2249,
+    "stock": 22,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "87e66670-8e2e-4177-bdb2-dc29e48ac8a7",
+    "name": "MODAL SADED",
+    "category": "Kurta",
+    "salesPrice": 0,
+    "mrp": 2399,
+    "stock": 8,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "3565748c-4faf-4dbe-a505-58ff7410fe68",
+    "name": "MUDAL",
+    "category": "",
+    "salesPrice": 1900,
+    "mrp": 0,
+    "stock": -1,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "89f50cb6-b42e-4d8e-a00e-086130b09887",
+    "name": "MUDAL BIG BOOTY13",
+    "category": "",
+    "salesPrice": 3800,
+    "mrp": 3800,
+    "stock": 7,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "a833ca25-a277-4d9d-9e1c-2b96df4418c3",
+    "name": "MUDAL DAMAN SET",
+    "category": "Set",
+    "salesPrice": 0,
+    "mrp": 3000,
+    "stock": 1,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "636663e8-9384-4a5d-943b-4c8defcf66c7",
+    "name": "mudal dhoti kurta",
+    "category": "",
+    "salesPrice": 1650,
+    "mrp": 2150,
+    "stock": 13,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "1fa7342f-796f-4d0b-ac7d-1bb68c069e63",
+    "name": "MUDAL DRESS13",
+    "category": "",
+    "salesPrice": 4800,
+    "mrp": 4800,
+    "stock": 7,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "ebefead5-9e49-4a01-b8ec-298875e70d69",
+    "name": "MUDAL SHORT FANCY A LINE DRESS13",
+    "category": "",
+    "salesPrice": 2800,
+    "mrp": 2800,
+    "stock": 16,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "bd3766b9-c802-4ef3-89db-a4f575a896c0",
+    "name": "Mulayam Mulmul",
+    "category": "",
+    "salesPrice": 2449,
+    "mrp": 2249,
+    "stock": 23,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "b0071194-4820-4c56-8d38-b774dffb9ed9",
+    "name": "MUL TOP 24",
+    "category": "TUNIC",
+    "salesPrice": 700,
+    "mrp": 1200,
+    "stock": 2,
+    "visible": false,
+    "reasons": [
+      "not visible on online store"
+    ]
+  },
+  {
+    "sourceId": "6773f3c5-429f-466e-9339-f799e19b66ee",
+    "name": "MUSLIN COLLOURED WHITE BROWN PINK YELLOW13",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 5599,
+    "stock": 3,
+    "visible": true,
+    "reasons": [
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "6d836f1c-d64d-4423-a306-21f2c0791073",
+    "name": "MUSLIN COLLOURED YOLK EMB13",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 6649,
+    "stock": 2,
+    "visible": true,
+    "reasons": [
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "2b6feb99-8130-4252-8e97-ee400a7d6216",
+    "name": "MUSLIN GB LACE",
+    "category": "Kurta",
+    "salesPrice": 0,
+    "mrp": 3999,
+    "stock": 14,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "76556bf9-9c40-49a3-86b6-abfe0ccdcbd4",
+    "name": "MUSLIN LINING COLLOURED13",
+    "category": "",
+    "salesPrice": 2500,
+    "mrp": 6499,
+    "stock": 1,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "27ba363e-160d-4240-b864-f92daffdd55b",
+    "name": "MUSLIN LINING WITHOUT MUKESH13",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 6649,
+    "stock": 1,
+    "visible": true,
+    "reasons": [
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "93752c43-f157-48e1-9c99-9896313f4611",
+    "name": "MUSLIN WHITE INNER WITH LINING MUKESH13",
+    "category": "",
+    "salesPrice": 3000,
+    "mrp": 7320,
+    "stock": 1,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "b3150808-6076-451c-8e8e-e0bfa5601b5c",
+    "name": "MUSLIN WHITE WITH BLUE COLOURED EMB 1313",
+    "category": "",
+    "salesPrice": 5532,
+    "mrp": 5532,
+    "stock": 2,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "4c8ce884-a2f5-4276-a5dd-ab49e137354e",
+    "name": "NAVY  BLUE SHIRT KURTA  HOC-40",
+    "category": "KURTA",
+    "salesPrice": 0,
+    "mrp": 2299,
+    "stock": 6,
+    "visible": true,
+    "reasons": [
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "66df943c-1732-4368-aa2b-8c08503d26ef",
+    "name": "NEW WHITE TO PINK ALL OVER E",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 0,
+    "stock": 4,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "d22e002a-1d6a-44a4-8e5b-209986c9cf1c",
+    "name": "ORGANZA SHIRT HOC-40",
+    "category": "Kurtis, Tunic , top",
+    "salesPrice": 2250,
+    "mrp": 2250,
+    "stock": 0,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative stock"
+    ]
+  },
+  {
+    "sourceId": "0ef7c7e4-1010-4ede-a57d-f6bd2fdc990e",
+    "name": "PANT COTTON LONG LACE FANCY13",
+    "category": "",
+    "salesPrice": 2800,
+    "mrp": 2800,
+    "stock": 2,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "77ac011e-778e-4683-a264-e6024627d331",
+    "name": "PANT MURRI",
+    "category": "Bottoms Pant , plazo",
+    "salesPrice": 1400,
+    "mrp": 1400,
+    "stock": -1,
+    "visible": true,
+    "reasons": [
+      "zero or negative stock"
+    ]
+  },
+  {
+    "sourceId": "8a98b816-a205-4aa6-a6e2-d235eabdb1f4",
+    "name": "PANTS CHICKO 13",
+    "category": "",
+    "salesPrice": 1430,
+    "mrp": 1430,
+    "stock": 3,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "28bb32e6-3b68-425e-9141-20dce556391f",
+    "name": "PANT USUAL CUT13",
+    "category": "Bottoms Pant , plazo",
+    "salesPrice": 800,
+    "mrp": 1800,
+    "stock": 9,
+    "visible": false,
+    "reasons": [
+      "not visible on online store"
+    ]
+  },
+  {
+    "sourceId": "b06f2d37-5cb9-462e-8173-5e2fab8f24cf",
+    "name": "PANT WHITE",
+    "category": "",
+    "salesPrice": 500,
+    "mrp": 0,
+    "stock": -1,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "677cb2bd-0742-4433-8b8f-607da65c6f42",
+    "name": "PETAR PAN DESIGN NO 67",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 0,
+    "stock": 5,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "daf7cce7-88c1-491f-ad7e-927859a9ab31",
+    "name": "Petar Pan Shirt",
+    "category": "Kurtis, Tunic , top",
+    "salesPrice": 2856,
+    "mrp": 2856,
+    "stock": 3,
+    "visible": false,
+    "reasons": [
+      "not visible on online store"
+    ]
+  },
+  {
+    "sourceId": "861e9cd3-f78d-4ed5-befc-1e9d4bacfa9a",
+    "name": "PLAZO",
+    "category": "Bottoms Pant , plazo",
+    "salesPrice": 999,
+    "mrp": 1299,
+    "stock": 0,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative stock"
+    ]
+  },
+  {
+    "sourceId": "6123ff38-1488-4d6d-862f-feeb5d8abdb6",
+    "name": "POLYSILK CLRNC",
+    "category": "",
+    "salesPrice": 1499,
+    "mrp": 1499,
+    "stock": 6,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "d47d48b8-2184-41a1-9503-1872e425b3f7",
+    "name": "PRINTED SHORT COLLOURED KURTIES13",
+    "category": "",
+    "salesPrice": 2998,
+    "mrp": 0,
+    "stock": -2,
+    "visible": true,
+    "reasons": [
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "5e3923b9-d5b5-46ab-8fc5-f1f47913ce4e",
+    "name": "PURE CHANDERI  SUIT PEACE",
+    "category": "",
+    "salesPrice": 10000,
+    "mrp": 10000,
+    "stock": 0,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "332b24ef-2051-4ffc-9731-bb965054b7ef",
+    "name": "RAYON13",
+    "category": "",
+    "salesPrice": 3000,
+    "mrp": 3000,
+    "stock": 8,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "d4479261-7909-45cc-9120-88daa97a2bb9",
+    "name": "RAYON COLLOURED G.B13",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 0,
+    "stock": 0,
+    "visible": true,
+    "reasons": [
+      "zero or negative sales price",
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "d442b3d8-d45f-49b1-9306-8e1d0143bdc4",
+    "name": "RAYON CORD SET13",
+    "category": "",
+    "salesPrice": 2499,
+    "mrp": 5600,
+    "stock": 0,
+    "visible": true,
+    "reasons": [
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "5f1b5bac-4a98-4254-bcd3-8a2ee0eb649b",
+    "name": "RAYON FANCY13",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 7400,
+    "stock": 4,
+    "visible": true,
+    "reasons": [
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "037ade87-df88-46c2-a152-806f40906175",
+    "name": "RAYON NAYRA DRESS13",
+    "category": "",
+    "salesPrice": 3800,
+    "mrp": 3800,
+    "stock": 5,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "ec120b2b-b8f1-4777-9f0f-ce0285b814be",
+    "name": "RAYON SELF PC13",
+    "category": "",
+    "salesPrice": 3187.5,
+    "mrp": 3000,
+    "stock": 7,
+    "visible": true,
+    "reasons": [
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "090a63c2-1f95-43be-937e-456be64bbc9b",
+    "name": "Safed Fulvan  Tunic",
+    "category": "Kurtis, Tunic , top",
+    "salesPrice": 2999,
+    "mrp": 2999,
+    "stock": 0,
+    "visible": true,
+    "reasons": [
+      "zero or negative stock"
+    ]
+  },
+  {
+    "sourceId": "27bf9849-ab56-497d-a931-9e6a62b19e5d",
+    "name": "SCARF KOTA13",
+    "category": "Kurtis, Tunic , top",
+    "salesPrice": 0,
+    "mrp": 2664,
+    "stock": 1,
+    "visible": true,
+    "reasons": [
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "fc2d7100-2c80-425e-9131-0b8525b8bf0c",
+    "name": "SHORT FRONT OPEN KURTIE COTTON13",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 2340,
+    "stock": 12,
+    "visible": true,
+    "reasons": [
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "8365097d-42e0-4243-8b9a-e90a2f69b2ac",
+    "name": "SHORT KURTA",
+    "category": "",
+    "salesPrice": 100,
+    "mrp": 0,
+    "stock": -50,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "84e6db8a-47ac-46dd-9765-7b7c04231eb0",
+    "name": "SOFT  SHIFFON  BLACK DUPATTA",
+    "category": "SCARF AND DUPATTA",
+    "salesPrice": 600,
+    "mrp": 600,
+    "stock": 9,
+    "visible": false,
+    "reasons": [
+      "not visible on online store"
+    ]
+  },
+  {
+    "sourceId": "acfff895-3448-423e-b771-4cbc1b398757",
+    "name": "SUR BLUE EMB",
+    "category": "",
+    "salesPrice": 1399,
+    "mrp": 2099,
+    "stock": -1,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "8282818a-87cf-4e5e-9a01-14e9f80d96a9",
+    "name": "TUNIC COLOURED",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 0,
+    "stock": 25,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "450a752b-ac6b-42fd-84cc-32d98add1cf6",
+    "name": "VISCOSE MUKESH DYE JAAL24",
+    "category": "KURTA",
+    "salesPrice": 7000,
+    "mrp": 7000,
+    "stock": 3,
+    "visible": false,
+    "reasons": [
+      "not visible on online store"
+    ]
+  },
+  {
+    "sourceId": "7a60da46-2adc-463b-926c-9122e313602f",
+    "name": "VISCOSE  WHITE24",
+    "category": "KURTA",
+    "salesPrice": 0,
+    "mrp": 6200,
+    "stock": 1,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price"
+    ]
+  },
+  {
+    "sourceId": "c706ea3e-df85-4fa9-bf55-38883ebe7e9f",
+    "name": "VOIL LONG KURTI",
+    "category": "",
+    "salesPrice": 2749,
+    "mrp": 3400,
+    "stock": 6,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "fcc9ed6f-bc65-4b0b-abc7-31fca79b0cb0",
+    "name": "WHITE CREAM HOC-7",
+    "category": "SET",
+    "salesPrice": 1850,
+    "mrp": 3700,
+    "stock": 0,
+    "visible": true,
+    "reasons": [
+      "zero or negative stock"
+    ]
+  },
+  {
+    "sourceId": "d7cb43b2-0bb1-4348-b4e7-69bce4694570",
+    "name": "WHITE KURTIE HEAVY DEISGN13",
+    "category": "",
+    "salesPrice": 4400,
+    "mrp": 4400,
+    "stock": 1,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "2e63047b-5b9e-4a96-866f-dad733079744",
+    "name": "WHITE TO BLUE DRESS",
+    "category": "",
+    "salesPrice": 5000,
+    "mrp": 5000,
+    "stock": 8,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "fbe393bd-0aed-4777-a0cb-8660fd42ca18",
+    "name": "Wltr04mrsewod",
+    "category": "",
+    "salesPrice": 0,
+    "mrp": 0,
+    "stock": 0,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "zero or negative sales price",
+      "zero or negative stock",
+      "category needs review (blank)"
+    ]
+  },
+  {
+    "sourceId": "3d6f6897-b6e6-44df-a465-2f6927c1c30f",
+    "name": "Yello Frock 13",
+    "category": "",
+    "salesPrice": 500,
+    "mrp": 500,
+    "stock": 14,
+    "visible": false,
+    "reasons": [
+      "not visible on online store",
+      "category needs review (blank)"
+    ]
+  }
+]

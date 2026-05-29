@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5EFE3"/>
+      <stop offset="100%" stop-color="#EFE6D2"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="1.5" fill="#B6892C" opacity="0.18"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="800" fill="url(#g)"/>
+  <rect width="600" height="800" fill="url(#dots)"/>
+  <g transform="translate(300 400)" fill="none" stroke="#B6892C" stroke-width="1.2" opacity="0.55">
+    <circle r="80"/>
+    <circle r="120"/>
+    <circle r="160"/>
+    <path d="M-160 0 L160 0 M0 -160 L0 160" stroke-dasharray="4 6"/>
+  </g>
+  <text x="300" y="730" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#15233F" letter-spacing="4">CHIKANKARI</text>
+</svg>

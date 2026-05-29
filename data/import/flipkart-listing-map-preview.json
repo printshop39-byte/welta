@@ -1,0 +1,150 @@
+{
+  "_policy": {
+    "pricing": "Flipkart prices are marketplace-specific and must not overwrite website prices without approval. The website price in src/lib/mock/products.ts (and any future ORDS source) remains the canonical/direct Welta price. The cart subtotal and the WhatsApp order message continue to use the website price.",
+    "ui": "Flipkart price is NOT displayed on the PDP at this time. This preview is reconciliation data only.",
+    "aliases": "The only confirmed Flipkart→Welta SKU alias today is SLEEVLES BLACK TOP → GRG680519172076. Other aliases stay blank until manual confirmation."
+  },
+  "summary": {
+    "flipkartListingRows": 5,
+    "flipkartInventoryOnlyRows": 1,
+    "weltaProductsWithSku": 94,
+    "matched": 0,
+    "unmatchedFromListing": 5,
+    "unmatchedFromInventoryOnly": 1,
+    "totalUnmatched": 6
+  },
+  "normalizationRule": "trim leading/trailing whitespace; collapse internal multiple whitespace into a single space; case-sensitive compare",
+  "matched": [],
+  "unmatched": [
+    {
+      "flipkart": {
+        "productTitle": "PoojaAbc Women Embroidered Straight Kurta (Black)",
+        "sellerSkuId": "kurta1",
+        "normalizedSku": "kurta1",
+        "subCategory": "kurta",
+        "flipkartSerialNumber": "KTAHJV5RN4J7FHVM",
+        "listingId": "LSTKTAHJV5RN4J7FHVMEOSYKB",
+        "listingStatus": "ACTIVE",
+        "mrp": 2500,
+        "bankSettlement": 1610,
+        "yourSellingPrice": 2005,
+        "benchmarkPrice": 2099,
+        "systemStockCount": 20,
+        "hsn": "61061000",
+        "taxCode": "GST_APPAREL"
+      },
+      "weltaMatched": false,
+      "reason": "Flipkart Seller SKU Id does not exist in MyBillBook SKU list",
+      "nameHints": [
+        "\"31 WHITE RAYON KURTA\" or any standalone kurta could match — verify by colour"
+      ],
+      "recommendedAction": "Either (a) update this Flipkart listing's SKU to match the MyBillBook SKU, or (b) add the marketplace SKU as an alias to the matching Welta product."
+    },
+    {
+      "flipkart": {
+        "productTitle": "WELTA Women Kurta Palazzo Set ()",
+        "sellerSkuId": "KURTA SET 1",
+        "normalizedSku": "KURTA SET 1",
+        "subCategory": "ethnic_set",
+        "flipkartSerialNumber": "ETHHKD6GWYSKPB7D",
+        "listingId": "LSTETHHKD6GWYSKPB7D0V4E6U",
+        "listingStatus": "ACTIVE",
+        "mrp": 3900,
+        "bankSettlement": 2431,
+        "yourSellingPrice": 3119,
+        "benchmarkPrice": 3199,
+        "systemStockCount": 20,
+        "hsn": "61069010",
+        "taxCode": "GST_APPAREL"
+      },
+      "weltaMatched": false,
+      "reason": "Flipkart Seller SKU Id does not exist in MyBillBook SKU list",
+      "nameHints": [
+        "Multiple Welta kurta-set products exist; review by colour to pick the right SKU"
+      ],
+      "recommendedAction": "Either (a) update this Flipkart listing's SKU to match the MyBillBook SKU, or (b) add the marketplace SKU as an alias to the matching Welta product."
+    },
+    {
+      "flipkart": {
+        "productTitle": "WELTA Women Kurti Palazzo Set ()",
+        "sellerSkuId": "WLT set 1",
+        "normalizedSku": "WLT set 1",
+        "subCategory": "ethnic_set",
+        "flipkartSerialNumber": "ETHHKD7GYZPJGAMC",
+        "listingId": "LSTETHHKD7GYZPJGAMCGHDW0F",
+        "listingStatus": "ACTIVE",
+        "mrp": 3500,
+        "bankSettlement": 1600,
+        "yourSellingPrice": 1793,
+        "benchmarkPrice": 2900,
+        "systemStockCount": 10,
+        "hsn": "61112000",
+        "taxCode": "GST_APPAREL"
+      },
+      "weltaMatched": false,
+      "reason": "Flipkart Seller SKU Id does not exist in MyBillBook SKU list",
+      "nameHints": [],
+      "recommendedAction": "Either (a) update this Flipkart listing's SKU to match the MyBillBook SKU, or (b) add the marketplace SKU as an alias to the matching Welta product."
+    },
+    {
+      "flipkart": {
+        "productTitle": "WELTA Women Kurti Palazzo Set ()",
+        "sellerSkuId": "WLT1Mset",
+        "normalizedSku": "WLT1Mset",
+        "subCategory": "ethnic_set",
+        "flipkartSerialNumber": "ETHHKDB4RM2YQZZ9",
+        "listingId": "LSTETHHKDB4RM2YQZZ9CF3YVU",
+        "listingStatus": "ACTIVE",
+        "mrp": 3500,
+        "bankSettlement": 1600,
+        "yourSellingPrice": 1793,
+        "benchmarkPrice": 2900,
+        "systemStockCount": 10,
+        "hsn": "54072030",
+        "taxCode": "GST_5"
+      },
+      "weltaMatched": false,
+      "reason": "Flipkart Seller SKU Id does not exist in MyBillBook SKU list",
+      "nameHints": [],
+      "recommendedAction": "Either (a) update this Flipkart listing's SKU to match the MyBillBook SKU, or (b) add the marketplace SKU as an alias to the matching Welta product."
+    },
+    {
+      "flipkart": {
+        "productTitle": "WELTA Casual Embroidered Women Black Top ()",
+        "sellerSkuId": " SLEEVLES  BLACK TOP",
+        "normalizedSku": "SLEEVLES BLACK TOP",
+        "subCategory": "top",
+        "flipkartSerialNumber": "TOPHKD6MQS7FAN8C",
+        "listingId": "LSTTOPHKD6MQS7FAN8CLJJYKB",
+        "listingStatus": "ACTIVE",
+        "mrp": 3000,
+        "bankSettlement": 1452,
+        "yourSellingPrice": 1646,
+        "benchmarkPrice": 2099,
+        "systemStockCount": 20,
+        "hsn": "55161200",
+        "taxCode": "GST_5"
+      },
+      "weltaMatched": false,
+      "reason": "Flipkart Seller SKU Id does not exist in MyBillBook SKU list",
+      "nameHints": [
+        "\"RAYON 13 SLEE BLACK TOP\" (SKU GRG680519172076) looks like a likely Welta counterpart"
+      ],
+      "recommendedAction": "Either (a) update this Flipkart listing's SKU to match the MyBillBook SKU, or (b) add the marketplace SKU as an alias to the matching Welta product."
+    },
+    {
+      "flipkart": {
+        "productTitle": null,
+        "sellerSkuId": "WLT9682KURTA",
+        "normalizedSku": "WLT9682KURTA",
+        "listingId": "LSTKTAHGNUVSZFGP3F9HEODBA",
+        "fsn": "KTAHGNUVSZFGP3F9",
+        "systemStockCount": 5,
+        "source": "inventory_csv_only"
+      },
+      "weltaMatched": false,
+      "reason": "Not in MyBillBook SKU list AND not in Flipkart listing XLS export",
+      "recommendedAction": "verify whether this Flipkart listing is still active and worth reconciling"
+    }
+  ]
+}

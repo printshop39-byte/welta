@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="42%" r="72%">
+      <stop offset="0%" stop-color="#0a2c8f"/>
+      <stop offset="100%" stop-color="#00186a"/>
+    </radialGradient>
+
+    <linearGradient id="gold1" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6b7487"/>
+      <stop offset="38%" stop-color="#c0ae6e"/>
+      <stop offset="70%" stop-color="#ebcc5e"/>
+      <stop offset="100%" stop-color="#5f6f96"/>
+    </linearGradient>
+    <linearGradient id="gold2" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#6a7284"/>
+      <stop offset="45%" stop-color="#b7aa73"/>
+      <stop offset="72%" stop-color="#ebcd60"/>
+      <stop offset="100%" stop-color="#70788b"/>
+    </linearGradient>
+
+    <filter id="softBlur" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+
+    <clipPath id="circleClip">
+      <circle cx="627" cy="627" r="600"/>
+    </clipPath>
+
+    <!-- one faceted arm -->
+    <g id="armTop">
+      <polygon points="627,627 553,482 627,118 700,482" fill="url(#gold1)" opacity="0.96"/>
+      <polygon points="627,627 627,118 699,482" fill="#f0cf5f" opacity="0.48"/>
+      <polygon points="627,627 553,482 627,118" fill="#7d8279" opacity="0.42"/>
+    </g>
+  </defs>
+
+  <rect width="1254" height="1254" fill="#efefef"/>
+  <circle cx="627" cy="627" r="600" fill="url(#bgGrad)"/>
+
+  <g clip-path="url(#circleClip)" filter="url(#softBlur)" opacity="0.97">
+    <use href="#armTop"/>
+    <use href="#armTop" transform="rotate(72 627 627)"/>
+    <use href="#armTop" transform="rotate(144 627 627)"/>
+    <use href="#armTop" transform="rotate(216 627 627)"/>
+    <use href="#armTop" transform="rotate(288 627 627)"/>
+
+    <!-- central darker facets to create the pinwheel look -->
+    <polygon points="627,627 700,482 744,542" fill="#5a688e" opacity="0.55"/>
+    <polygon points="627,627 744,542 905,489" fill="#b8a56d" opacity="0.45"/>
+    <polygon points="627,627 829,751 905,1017" fill="#8a8571" opacity="0.5"/>
+    <polygon points="627,627 626,857 439,1032" fill="#7f816f" opacity="0.48"/>
+    <polygon points="627,627 428,742 127,492" fill="#8c8b75" opacity="0.38"/>
+  </g>
+
+  <text x="627" y="640"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="118"
+        font-weight="300"
+        letter-spacing="25"
+        fill="#ffffff">WELTA</text>
+  <text x="1000" y="590"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="64"
+        font-weight="600"
+        fill="#ffffff">®</text>
+</svg>

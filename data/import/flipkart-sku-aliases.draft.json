@@ -1,0 +1,84 @@
+{
+  "_meta": {
+    "purpose": "Manual SKU alias draft — maps Flipkart Seller SKU Ids to MyBillBook (Welta) SKUs so future Flipkart listing exports can be reconciled with the site catalog.",
+    "instructions": "Fill in `suggestedWeltaSku` for each row, then change `confidence` to one of `confirmed-by-user`, `high`, `medium`, `low`. Do NOT edit src/lib/mock/products.ts from this file directly — once approved, the alias table will be loaded as a separate JSON resource.",
+    "schemaVersion": 1,
+    "sourcePreview": "data/import/flipkart-listing-map-preview.json",
+    "createdAt": "2026-05-29"
+  },
+  "aliases": [
+    {
+      "flipkartSku": "kurta1",
+      "flipkartTitle": "PoojaAbc Women Embroidered Straight Kurta (Black)",
+      "flipkartFsn": "KTAHJV5RN4J7FHVM",
+      "listingId": "LSTKTAHJV5RN4J7FHVMEOSYKB",
+      "flipkartMrp": 2500,
+      "flipkartSellingPrice": 2005,
+      "flipkartStock": 20,
+      "suggestedWeltaSku": "",
+      "confidence": "unset",
+      "notes": "manual review needed — title implies a generic black straight kurta; no exact name match in MyBillBook. Closest candidates by category are kurta-sets/kurtis with 'black' in name or colour. Verify against the Flipkart listing photo before assigning."
+    },
+    {
+      "flipkartSku": "KURTA SET 1",
+      "flipkartTitle": "WELTA Women Kurta Palazzo Set ()",
+      "flipkartFsn": "ETHHKD6GWYSKPB7D",
+      "listingId": "LSTETHHKD6GWYSKPB7D0V4E6U",
+      "flipkartMrp": 3900,
+      "flipkartSellingPrice": 3119,
+      "flipkartStock": 20,
+      "suggestedWeltaSku": "",
+      "confidence": "unset",
+      "notes": "manual review needed — 'WELTA Women Kurta Palazzo Set ()' is ambiguous (empty parens suggest a missing colour/variant). Multiple kurta-set candidates exist in MyBillBook (HOC-12, HOC-13, HOC-28, HOC-33, COTTON PLAZO SET13, etc.). Choose by Flipkart listing photo + colour."
+    },
+    {
+      "flipkartSku": "WLT set 1",
+      "flipkartTitle": "WELTA Women Kurti Palazzo Set ()",
+      "flipkartFsn": "ETHHKD7GYZPJGAMC",
+      "listingId": "LSTETHHKD7GYZPJGAMCGHDW0F",
+      "flipkartMrp": 3500,
+      "flipkartSellingPrice": 1793,
+      "flipkartStock": 10,
+      "suggestedWeltaSku": "",
+      "confidence": "unset",
+      "notes": "manual review needed — possible DUPLICATE of WLT1Mset: identical title, MRP (3500), selling price (1793), and stock (10). Decide whether to (a) point both Flipkart SKUs at the same Welta SKU, or (b) deactivate one of the Flipkart listings."
+    },
+    {
+      "flipkartSku": "WLT1Mset",
+      "flipkartTitle": "WELTA Women Kurti Palazzo Set ()",
+      "flipkartFsn": "ETHHKDB4RM2YQZZ9",
+      "listingId": "LSTETHHKDB4RM2YQZZ9CF3YVU",
+      "flipkartMrp": 3500,
+      "flipkartSellingPrice": 1793,
+      "flipkartStock": 10,
+      "suggestedWeltaSku": "",
+      "confidence": "unset",
+      "notes": "manual review needed — possible DUPLICATE of 'WLT set 1' (same title/price/MRP/stock). Same decision required."
+    },
+    {
+      "flipkartSku": "SLEEVLES BLACK TOP",
+      "flipkartSkuRaw": " SLEEVLES  BLACK TOP",
+      "flipkartTitle": "WELTA Casual Embroidered Women Black Top ()",
+      "flipkartFsn": "TOPHKD6MQS7FAN8C",
+      "listingId": "LSTTOPHKD6MQS7FAN8CLJJYKB",
+      "flipkartMrp": 3000,
+      "flipkartSellingPrice": 1646,
+      "flipkartStock": 20,
+      "suggestedWeltaSku": "GRG680519172076",
+      "confidence": "confirmed-by-user",
+      "notes": "Confirmed by user. Maps to MyBillBook product 'RAYON 13 SLEE BLACK TOP' (slug rayon-13-slee-black-top, collection kurtis). Welta site MRP 3000 / price 3000; Flipkart MRP 3000 / price 1646 — review pricing strategy before publishing the alias."
+    },
+    {
+      "flipkartSku": "WLT9682KURTA",
+      "flipkartTitle": null,
+      "flipkartFsn": "KTAHGNUVSZFGP3F9",
+      "listingId": "LSTKTAHGNUVSZFGP3F9HEODBA",
+      "flipkartMrp": null,
+      "flipkartSellingPrice": null,
+      "flipkartStock": 5,
+      "suggestedWeltaSku": "",
+      "confidence": "unset",
+      "notes": "manual review needed — inventory-only entry (no row in the listing XLS export). Likely inactive or draft on Flipkart. Verify the Flipkart listing is still active before mapping; if inactive, consider closing it instead."
+    }
+  ]
+}
