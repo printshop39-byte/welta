@@ -12,8 +12,8 @@ type FeaturedProductsProps = {
 
 export function FeaturedProducts({
   products,
-  eyebrow = "The atelier favourites",
-  title = "Bestsellers & new arrivals",
+  eyebrow = "Bestsellers",
+  title = "Most loved this season",
   description = "Hand-picked pieces, ready to ship from our Lucknow atelier.",
 }: FeaturedProductsProps) {
   return (

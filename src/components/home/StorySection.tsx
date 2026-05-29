@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/Button";
 
 export function StorySection() {
   return (
-    <section className="bg-[var(--color-navy-ink)] text-[var(--color-ivory)] py-24">
-      <Container className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <section className="bg-[var(--color-navy-ink)] text-[var(--color-ivory)] py-20 sm:py-24">
+      <Container className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         <div className="lg:col-span-6">
-          <div className="relative aspect-[4/5] max-w-[520px] bg-[var(--color-cream)] overflow-hidden">
+          <div className="relative aspect-[4/5] max-w-[520px] mx-auto lg:mx-0 bg-[var(--color-cream)] overflow-hidden">
             <Image
               src="/products/welta-hero-white-chikankari.jpg"
               alt="Welta Chikankari karigars hand-embroidering ivory mul in the Lucknow atelier"
@@ -26,13 +26,13 @@ export function StorySection() {
           </div>
         </div>
         <div className="lg:col-span-6">
-          <p className="text-xs uppercase tracking-[0.38em] text-[var(--color-gold-soft)] mb-5">
-            Our atelier
+          <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.42em] text-[var(--color-gold-soft)] mb-5">
+            The craft
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl leading-tight">
+          <h2 className="font-serif text-[28px] sm:text-4xl lg:text-[44px] leading-[1.1] tracking-[-0.005em]">
             A craft passed down through generations, made for today.
           </h2>
-          <p className="mt-6 text-base sm:text-lg text-[var(--color-ivory-soft)]/85 leading-relaxed max-w-xl">
+          <p className="mt-6 text-[15px] sm:text-base text-[var(--color-ivory-soft)]/85 leading-relaxed max-w-xl">
             At Welta, every piece begins on a humble wooden frame. We work
             with over 120 karigars across Lucknow — many of them third and
             fourth generation chikankari artisans — to bring you garments

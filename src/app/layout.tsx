@@ -2,7 +2,7 @@ import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/layout/Header";find
+import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
 const inter = Inter({
@@ -18,7 +18,8 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://weltachikankari.in";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.weltachikankari.in";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -43,13 +44,11 @@ export const metadata: Metadata = {
     siteName: "Welta Chikankari",
     type: "website",
     locale: "en_IN",
-    // Temporary OG fallback — hero product image until /og-default.jpg
-    // (recommended 1200x630, JPG, < 300KB) is added to /public.
     images: [
       {
-        url: "/products/welta-hero-white-chikankari.jpg",
+        url: "/og-default.jpg",
         width: 1200,
-        height: 1500,
+        height: 630,
         alt: "Welta Chikankari — Handcrafted Lucknowi Chikankari",
       },
     ],
@@ -59,7 +58,7 @@ export const metadata: Metadata = {
     title: "Welta Chikankari — Handcrafted Lucknowi Chikankari",
     description:
       "Premium handcrafted Lucknowi chikankari, made by master karigars in Lucknow.",
-    images: ["/products/welta-hero-white-chikankari.jpg"],
+    images: ["/og-default.jpg"],
   },
 };
 
@@ -75,7 +74,8 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-[var(--color-ivory)] text-[var(--color-charcoal)]">
         <Header />
-        <main className="flex-1">{children}
+        <main className="flex-1">{children}</main>
+        <Footer />
         <Analytics />
       </body>
     </html>

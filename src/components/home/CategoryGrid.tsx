@@ -11,9 +11,9 @@ type CategoryGridProps = {
 export function CategoryGrid({ collections }: CategoryGridProps) {
   return (
     <Section
-      eyebrow="Shop by craft"
-      title="Curated collections"
-      description="From floor-length anarkalis to featherlight dupattas — each collection celebrates a distinct facet of Lucknowi chikankari."
+      eyebrow="Shop by category"
+      title="The collections"
+      description="From floor-length anarkalis to featherlight dupattas — each collection a distinct facet of Lucknowi chikankari."
       spacing="tight"
     >
       <Container>

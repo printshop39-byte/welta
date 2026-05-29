@@ -17,11 +17,22 @@ const supportLinks = [
   { href: "/about#shipping", label: "Shipping & Returns" },
 ];
 
+/**
+ * Editorial footer.
+ *
+ * Layout
+ *   Mobile : brand card top → Shop column → Atelier column → Reach us → bottom bar
+ *   Desktop: 12-col grid with brand card (5) + Shop (3) + Atelier (2) + Reach us (2)
+ *
+ * Every link, email, and the WhatsApp number from the previous version
+ * are preserved. The logo SVG is preserved.
+ */
 export function Footer() {
   return (
     <footer className="mt-16 sm:mt-20 bg-[var(--color-navy-ink)] text-[var(--color-ivory-soft)]">
-      <Container className="py-14 sm:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
+      <Container className="py-14 sm:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12">
+          {/* ─── Brand card ─── */}
           <div className="md:col-span-5">
             <Link
               href="/"
@@ -36,22 +47,27 @@ export function Footer() {
                 className="w-14 h-14"
               />
             </Link>
-            <p className="mt-6 max-w-sm text-sm leading-relaxed text-[var(--color-ivory-soft)]/80">
-              Handcrafted Lucknowi chikankari, made by master karigars in the
-              old by-lanes of Lucknow. Heirloom craft, designed for everyday
-              luxury.
+            <p className="mt-6 max-w-sm text-[14px] leading-relaxed text-[var(--color-ivory-soft)]/80">
+              Handcrafted Lucknowi chikankari, made by master karigars in
+              the old by-lanes of Lucknow. Heirloom craft, designed for
+              everyday luxury.
+            </p>
+            <p className="mt-6 text-[10px] tracking-[0.42em] uppercase text-[var(--color-gold-soft)]">
+              Atelier · Alambagh, Lucknow
             </p>
           </div>
+
+          {/* ─── Shop column ─── */}
           <div className="md:col-span-3">
-            <h3 className="text-xs uppercase tracking-[0.32em] text-[var(--color-gold-soft)] mb-5">
+            <h3 className="text-[10px] sm:text-[11px] uppercase tracking-[0.42em] text-[var(--color-gold-soft)] mb-5">
               Shop
             </h3>
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-[14px]">
               {shopLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="hover:text-[var(--color-gold-soft)] transition-colors"
+                    className="text-[var(--color-ivory-soft)]/85 hover:text-[var(--color-ivory)] transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -59,16 +75,18 @@ export function Footer() {
               ))}
             </ul>
           </div>
-          <div className="md:col-span-4">
-            <h3 className="text-xs uppercase tracking-[0.32em] text-[var(--color-gold-soft)] mb-5">
+
+          {/* ─── Atelier column ─── */}
+          <div className="md:col-span-2">
+            <h3 className="text-[10px] sm:text-[11px] uppercase tracking-[0.42em] text-[var(--color-gold-soft)] mb-5">
               Atelier
             </h3>
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-[14px]">
               {supportLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="hover:text-[var(--color-gold-soft)] transition-colors"
+                    className="text-[var(--color-ivory-soft)]/85 hover:text-[var(--color-ivory)] transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -76,12 +94,41 @@ export function Footer() {
               ))}
             </ul>
           </div>
+
+          {/* ─── Reach us column ─── */}
+          <div className="md:col-span-2">
+            <h3 className="text-[10px] sm:text-[11px] uppercase tracking-[0.42em] text-[var(--color-gold-soft)] mb-5">
+              Reach us
+            </h3>
+            <ul className="space-y-3 text-[14px]">
+              <li>
+                <a
+                  href="https://wa.me/918468900336"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--color-ivory-soft)]/85 hover:text-[var(--color-ivory)] transition-colors"
+                >
+                  WhatsApp
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:weltaindia@gmail.com"
+                  className="text-[var(--color-ivory-soft)]/85 hover:text-[var(--color-ivory)] transition-colors"
+                >
+                  weltaindia@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="mt-14 pt-8 border-t border-[var(--color-ivory)]/10 flex flex-col sm:flex-row gap-4 sm:items-center sm:justify-between text-xs text-[var(--color-ivory-soft)]/60">
+
+        {/* ─── Bottom bar ─── */}
+        <div className="mt-14 pt-8 border-t border-[var(--color-ivory)]/10 flex flex-col sm:flex-row gap-4 sm:items-center sm:justify-between text-[11px] text-[var(--color-ivory-soft)]/60">
           <p>
             © {new Date().getFullYear()} Welta Chikankari. All rights reserved.
           </p>
-          <p className="tracking-[0.32em] uppercase">Made in Lucknow</p>
+          <p className="tracking-[0.42em] uppercase">Made in Lucknow</p>
         </div>
       </Container>
     </footer>
