@@ -4,78 +4,141 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 
 /**
- * Editorial hero — luxury-fashion structure.
+ * Editorial hero — cinematic on mobile, split on desktop.
  *
- * Mobile (default): image stacked above copy, slightly taller crop, a
- * compact eyebrow + headline + supporting line + single primary CTA. A
- * ghost text link gives a secondary path without crowding.
- * Desktop (lg+): split 5/7 — copy left, image right. A quote card
- * floats over the lower-left edge of the image (visible from md+) and
- * a thin gold rule replaces the boxed stat block.
+ * Mobile (< lg):
+ *   The image escapes the Container and runs full viewport width with
+ *   a cinematic 72vh height (560px floor / 760px ceiling so very tall
+ *   phones don't push the fold). A soft gradient at the foot adds
+ *   depth without colouring the copy block that follows. Heading and
+ *   CTAs sit BELOW the image, on warm ivory, so legibility is never
+ *   tied to overlay contrast.
+ *
+ * Desktop (lg+):
+ *   Classic 5/7 split — copy left, image right — inside the Container
+ *   for generous whitespace. The mobile-only full-bleed block is
+ *   hidden; the desktop-only split block takes over.
+ *
+ * Header, SEO metadata, alt text, CTA targets, and the priority Image
+ * load are preserved from the previous version.
  */
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[var(--color-ivory-soft)]">
-      <Container className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 pt-8 sm:pt-12 lg:pt-20 pb-14 sm:pb-20 lg:pb-24 items-center">
-        {/* ─── Image first on mobile, right on desktop ─── */}
-        <div className="lg:col-span-7 lg:order-2 relative">
-          <div className="relative aspect-[4/5] sm:aspect-[5/6] lg:aspect-[4/5] w-full overflow-hidden bg-[var(--color-cream)]">
-            <Image
-              src="/products/welta-hero-white-chikankari.jpg"
-              alt="Handcrafted Lucknowi chikankari piece in ivory white, hand-embroidered by master karigars of the Welta atelier in Lucknow"
-              fill
-              priority
-              sizes="(min-width: 1024px) 58vw, 100vw"
-              className="object-cover"
-            />
-          </div>
-          {/* Quote card — visible from md+ so it doesn't crowd mobile.
-              Soft shadow rather than a hard border, sized to feel like
-              a margin note rather than an interrupting overlay. */}
-          <figure className="hidden md:block absolute -bottom-6 left-4 lg:-left-8 lg:-bottom-8 bg-[var(--color-navy-ink)] text-[var(--color-ivory)] px-6 py-5 lg:px-7 lg:py-6 max-w-[280px] shadow-[0_24px_60px_-30px_rgba(13,23,41,0.45)]">
-            <blockquote className="font-serif text-lg lg:text-xl leading-snug italic">
-              &ldquo;Each thread, a quiet act of devotion.&rdquo;
-            </blockquote>
-            <figcaption className="mt-3 text-[10px] tracking-[0.32em] uppercase text-[var(--color-gold-soft)] not-italic">
-              — Master karigar, Chowk Lucknow
-            </figcaption>
-          </figure>
+    <section className="bg-[var(--color-ivory-soft)]">
+      {/* ─────────────────────────────────────────────────────────────
+          MOBILE — full-bleed cinematic image, then copy below
+          Hidden from lg upward.
+          ───────────────────────────────────────────────────────────── */}
+      <div className="lg:hidden">
+        <div className="relative w-full h-[72vh] min-h-[560px] max-h-[760px] overflow-hidden bg-[var(--color-cream)]">
+          <Image
+            src="/products/welta-hero-white-chikankari.jpg"
+            alt="Handcrafted Lucknowi chikankari piece in ivory white, hand-embroidered by master karigars of the Welta atelier in Lucknow"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+          {/* Subtle bottom-up gradient — adds depth but doesn't darken
+              the upper portion of the image. Copy is below the image,
+              so this overlay is decorative only. */}
+          <div
+            aria-hidden="true"
+            className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[var(--color-navy-ink)]/25 via-[var(--color-navy-ink)]/5 to-transparent pointer-events-none"
+          />
         </div>
 
-        {/* ─── Copy block ─── */}
-        <div className="lg:col-span-5 lg:order-1">
-          <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.42em] text-[var(--color-gold-deep)] mb-5 sm:mb-6">
+        <Container className="pt-10 pb-14">
+          <p className="text-[10px] uppercase tracking-[0.42em] text-[var(--color-gold-deep)] mb-5">
             The Welta Edit · Lucknow
           </p>
-          <h1 className="font-serif text-[36px] leading-[1.04] sm:text-5xl lg:text-[60px] xl:text-[68px] text-[var(--color-navy-ink)] tracking-[-0.01em] max-w-[16ch]">
+          <h1 className="font-serif text-[36px] leading-[1.04] sm:text-[44px] text-[var(--color-navy-ink)] tracking-[-0.01em] max-w-[16ch]">
             Hand-stitched chikankari, made for the way you live.
           </h1>
-          <p className="mt-6 max-w-[44ch] text-[15px] sm:text-[17px] text-[var(--color-muted)] leading-relaxed">
+          <p className="mt-5 max-w-[44ch] text-[15px] sm:text-[16px] text-[var(--color-muted)] leading-relaxed">
             Anarkalis, kurta sets and dupattas embroidered by master
             karigars in the old by-lanes of Lucknow — heirloom craft,
             quietly modern.
           </p>
 
-          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+          <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
             <Button as="link" href="/collections" variant="primary">
               Shop the atelier
             </Button>
             <Link
               href="/about"
-              className="inline-flex items-center gap-2 text-[12px] sm:text-[13px] tracking-[0.22em] uppercase text-[var(--color-navy-ink)] hover:text-[var(--color-gold-deep)] transition-colors"
+              className="inline-flex items-center gap-2 text-[12px] tracking-[0.22em] uppercase text-[var(--color-navy-ink)] hover:text-[var(--color-gold-deep)] transition-colors"
             >
               Our craft
               <span aria-hidden="true">→</span>
             </Link>
           </div>
 
-          {/* Hairline stat strip replaces the 3-col block — reads as
-              editorial credits rather than infographic stats. */}
-          <dl className="mt-10 sm:mt-14 grid grid-cols-3 gap-x-6 text-center sm:text-left border-t border-[var(--color-gold-soft)]/40 pt-6 max-w-md">
+          <dl className="mt-10 grid grid-cols-3 gap-x-6 text-left border-t border-[var(--color-gold-soft)]/40 pt-6 max-w-md">
             <Stat label="Karigars" value="120+" />
             <Stat label="Years of craft" value="40" />
             <Stat label="Pieces a year" value="5,000" />
           </dl>
+        </Container>
+      </div>
+
+      {/* ─────────────────────────────────────────────────────────────
+          DESKTOP — editorial 5/7 split inside Container
+          Hidden below lg.
+          ───────────────────────────────────────────────────────────── */}
+      <Container className="hidden lg:grid grid-cols-12 gap-16 pt-20 pb-24 items-center">
+        <div className="col-span-5">
+          <p className="text-[11px] uppercase tracking-[0.42em] text-[var(--color-gold-deep)] mb-6">
+            The Welta Edit · Lucknow
+          </p>
+          <h1 className="font-serif text-[60px] xl:text-[68px] leading-[1.04] text-[var(--color-navy-ink)] tracking-[-0.01em] max-w-[16ch]">
+            Hand-stitched chikankari, made for the way you live.
+          </h1>
+          <p className="mt-6 max-w-[44ch] text-[17px] text-[var(--color-muted)] leading-relaxed">
+            Anarkalis, kurta sets and dupattas embroidered by master
+            karigars in the old by-lanes of Lucknow — heirloom craft,
+            quietly modern.
+          </p>
+
+          <div className="mt-10 flex items-center gap-6">
+            <Button as="link" href="/collections" variant="primary">
+              Shop the atelier
+            </Button>
+            <Link
+              href="/about"
+              className="inline-flex items-center gap-2 text-[13px] tracking-[0.22em] uppercase text-[var(--color-navy-ink)] hover:text-[var(--color-gold-deep)] transition-colors"
+            >
+              Our craft
+              <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+
+          <dl className="mt-14 grid grid-cols-3 gap-x-6 border-t border-[var(--color-gold-soft)]/40 pt-6 max-w-md">
+            <Stat label="Karigars" value="120+" />
+            <Stat label="Years of craft" value="40" />
+            <Stat label="Pieces a year" value="5,000" />
+          </dl>
+        </div>
+
+        <div className="col-span-7 relative">
+          <div className="relative aspect-[4/5] w-full overflow-hidden bg-[var(--color-cream)]">
+            <Image
+              src="/products/welta-hero-white-chikankari.jpg"
+              alt=""
+              fill
+              sizes="58vw"
+              className="object-cover"
+              aria-hidden="true"
+            />
+          </div>
+          <figure className="absolute -bottom-8 -left-8 bg-[var(--color-navy-ink)] text-[var(--color-ivory)] px-7 py-6 max-w-[280px] shadow-[0_24px_60px_-30px_rgba(13,23,41,0.45)]">
+            <blockquote className="font-serif text-xl leading-snug italic">
+              &ldquo;Each thread, a quiet act of devotion.&rdquo;
+            </blockquote>
+            <figcaption className="mt-3 text-[10px] tracking-[0.32em] uppercase text-[var(--color-gold-soft)] not-italic">
+              — Master karigar, Chowk Lucknow
+            </figcaption>
+          </figure>
         </div>
       </Container>
     </section>
