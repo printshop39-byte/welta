@@ -1,8 +1,8 @@
-import { Analytics } from "@vercel/analytics/next";
+fimport { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/layout/Header";
+import { Header } from "@/components/layout/Header";find
 import { Footer } from "@/components/layout/Footer";
 
 const inter = Inter({
@@ -75,8 +75,8 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-[var(--color-ivory)] text-[var(--color-charcoal)]">
         <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <main className="flex-1">{children}
+        <Analytics />
       </body>
     </html>
   );
