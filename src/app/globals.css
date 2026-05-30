@@ -153,3 +153,10 @@ a {
   font-family: inherit;
   letter-spacing: 0;
 }
+/* Force serif utility back to professional sans.
+   WELTA brand font must stay only on .logo-wordmark. */
+.font-serif,
+[class~="font-serif"] {
+  font-family: var(--font-inter), Inter, ui-sans-serif, system-ui, sans-serif !important;
+  letter-spacing: 0.01em;
+}
