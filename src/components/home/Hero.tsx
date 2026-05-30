@@ -36,7 +36,13 @@ export function Hero() {
             alt="Handcrafted Lucknowi chikankari piece in ivory white, hand-embroidered by master karigars of the Welta atelier in Lucknow"
             fill
             priority
-            sizes="100vw"
+            // Responsive sizes hint that matches the actual layout —
+            // mobile renders the image full-bleed (100vw), the lg/xl
+            // split layouts size the image to the 7-of-12 column
+            // (~58-60vw). This silences the Next.js "Image with fill +
+            // sizes='100vw' is not rendered at full viewport width"
+            // warning at desktop breakpoints.
+            sizes="(min-width: 1280px) 58vw, (min-width: 1024px) 60vw, 100vw"
             className="object-cover"
           />
           {/* Subtle bottom-up gradient — adds depth but doesn't darken
