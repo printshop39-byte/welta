@@ -72,15 +72,22 @@ export function Hero() {
               as="link"
               href="/collections"
               variant="primary"
-              // Hero-local contrast override with !important to win
-              // against any cascade (a { color: inherit }, font-swap
-              // flash, or another `text-*` Tailwind utility appearing
-              // later in the compiled stylesheet). The inner span also
-              // gets !text-ivory so a wrapping anchor's inherit can't
-              // re-paint the label dark.
+              // Belt-and-braces fix: Tailwind !important + inline style.
+              // The screenshot showed the dark text persisting even
+              // after the !important class — meaning either the CSS
+              // bundle was cached or the variant declaration outranked
+              // the override. Inline style is the strongest layer the
+              // CSS cascade allows short of !important on inline style,
+              // and is immune to bundle caching.
               className="bg-[var(--color-navy-ink)] !text-[var(--color-ivory)] hover:bg-[var(--color-navy)] hover:!text-[var(--color-ivory)]"
+              style={{ color: "#FBF7EF" }}
             >
-              <span className="!text-[var(--color-ivory)]">Shop the atelier</span>
+              <span
+                className="!text-[var(--color-ivory)]"
+                style={{ color: "#FBF7EF" }}
+              >
+                Shop the atelier
+              </span>
             </Button>
             <Link
               href="/about"
@@ -122,15 +129,22 @@ export function Hero() {
               as="link"
               href="/collections"
               variant="primary"
-              // Hero-local contrast override with !important to win
-              // against any cascade (a { color: inherit }, font-swap
-              // flash, or another `text-*` Tailwind utility appearing
-              // later in the compiled stylesheet). The inner span also
-              // gets !text-ivory so a wrapping anchor's inherit can't
-              // re-paint the label dark.
+              // Belt-and-braces fix: Tailwind !important + inline style.
+              // The screenshot showed the dark text persisting even
+              // after the !important class — meaning either the CSS
+              // bundle was cached or the variant declaration outranked
+              // the override. Inline style is the strongest layer the
+              // CSS cascade allows short of !important on inline style,
+              // and is immune to bundle caching.
               className="bg-[var(--color-navy-ink)] !text-[var(--color-ivory)] hover:bg-[var(--color-navy)] hover:!text-[var(--color-ivory)]"
+              style={{ color: "#FBF7EF" }}
             >
-              <span className="!text-[var(--color-ivory)]">Shop the atelier</span>
+              <span
+                className="!text-[var(--color-ivory)]"
+                style={{ color: "#FBF7EF" }}
+              >
+                Shop the atelier
+              </span>
             </Button>
             <Link
               href="/about"
