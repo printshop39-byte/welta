@@ -68,7 +68,16 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
-            <Button as="link" href="/collections" variant="primary">
+            <Button
+              as="link"
+              href="/collections"
+              variant="primary"
+              // Hero-local contrast override: bg = navy-ink (darker
+              // base than the default --color-navy) with explicit
+              // ivory text. This guarantees the "Shop the Atelier"
+              // label stays legible regardless of font-swap timing.
+              className="bg-[var(--color-navy-ink)] text-[var(--color-ivory)] hover:bg-[var(--color-navy)]"
+            >
               Shop the atelier
             </Button>
             <Link
@@ -107,7 +116,16 @@ export function Hero() {
           </p>
 
           <div className="mt-10 flex items-center gap-6">
-            <Button as="link" href="/collections" variant="primary">
+            <Button
+              as="link"
+              href="/collections"
+              variant="primary"
+              // Hero-local contrast override: bg = navy-ink (darker
+              // base than the default --color-navy) with explicit
+              // ivory text. This guarantees the "Shop the Atelier"
+              // label stays legible regardless of font-swap timing.
+              className="bg-[var(--color-navy-ink)] text-[var(--color-ivory)] hover:bg-[var(--color-navy)]"
+            >
               Shop the atelier
             </Button>
             <Link
