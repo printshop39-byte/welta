@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Tenor Sans";
+  src: url("/fonts/TenorSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*
  * Brand source tokens — declared once on :root so they are also
  * available to plain CSS (var(--color-ivory)) used across components.
@@ -90,3 +98,9 @@ a {
 /* Utility for hiding scrollbars on horizontally-scrollable rails */
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.logo-wordmark {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+}

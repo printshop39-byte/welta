@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { MobileMenu } from "@/components/layout/MobileMenu";
@@ -19,12 +18,14 @@ const navLinks = [
 
 /**
  * Header layout
- *   Mobile  : [hamburger] [centered logo] [search] [bag]
- *   Desktop : [logo] [nav] ........... [search] [bag]
+ *   Mobile  : [hamburger] [centered WELTA wordmark] [search] [bag]
+ *   Desktop : [WELTA wordmark] [nav] ........... [search] [bag]
  *
- * The mobile centered-logo trick uses absolute positioning so the
- * hamburger and the icon-cluster can sit at the edges without pushing
- * the logo off-axis.
+ * Wordmark uses the locally-hosted Tenor Sans font via the
+ * `.logo-wordmark` utility class declared in globals.css. The class
+ * sets font-family, weight, generous tracking, and uppercase — so the
+ * markup stays semantic ("WELTA" as natural-case text in the JSX) but
+ * always renders as the brand wordmark.
  */
 export function Header() {
   return (
@@ -37,7 +38,7 @@ export function Header() {
       </div>
 
       <Container className="relative flex items-center h-14 sm:h-20">
-        {/* Left cluster — hamburger (mobile) + logo (desktop) + nav (desktop) */}
+        {/* Left cluster — hamburger (mobile) + wordmark (desktop) + nav (desktop) */}
         <div className="flex items-center gap-2 lg:gap-10">
           <MobileMenu links={navLinks} />
           <Link
@@ -45,14 +46,9 @@ export function Header() {
             className="hidden lg:inline-flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-ivory)]"
             aria-label="Welta Chikankari — Home"
           >
-            <Image
-              src="/logo.svg"
-              alt="Welta Chikankari"
-              width={40}
-              height={40}
-              priority
-              className="w-10 h-10"
-            />
+            <span className="logo-wordmark text-[20px] text-[var(--color-navy-ink)]">
+              Welta
+            </span>
           </Link>
           <nav className="hidden lg:flex items-center gap-6 xl:gap-7" aria-label="Primary">
             {navLinks.map((link) => (
@@ -67,23 +63,21 @@ export function Header() {
           </nav>
         </div>
 
-        {/* Centered logo — mobile only.
+        {/* Centered wordmark — mobile only.
             Absolutely positioned so the hamburger + icon cluster don't
-            push it off centre. Hidden on lg+ because the logo lives
-            in the left cluster on desktop. */}
+            push it off centre. Smaller tracking on mobile so all three
+            zones (hamburger / wordmark / icons) fit within ~390px. */}
         <Link
           href="/"
           aria-label="Welta Chikankari — Home"
           className="lg:hidden absolute left-1/2 -translate-x-1/2 inline-flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-ivory)]"
         >
-          <Image
-            src="/logo.svg"
-            alt="Welta Chikankari"
-            width={36}
-            height={36}
-            priority
-            className="w-9 h-9"
-          />
+          <span
+            className="logo-wordmark text-[16px] text-[var(--color-navy-ink)]"
+            style={{ letterSpacing: "0.28em" }}
+          >
+            Welta
+          </span>
         </Link>
 
         {/* Right cluster */}

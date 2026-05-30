@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 
@@ -18,14 +17,16 @@ const supportLinks = [
 ];
 
 /**
- * Editorial footer.
+ * Editorial footer with wordmark branding.
  *
  * Layout
  *   Mobile : brand card top → Shop column → Atelier column → Reach us → bottom bar
  *   Desktop: 12-col grid with brand card (5) + Shop (3) + Atelier (2) + Reach us (2)
  *
- * Every link, email, and the WhatsApp number from the previous version
- * are preserved. The logo SVG is preserved.
+ * Every link, email, the WhatsApp link, and the Made-in-Lucknow line
+ * from the previous version are preserved. The logo image has been
+ * retired in favour of the WELTA wordmark in Tenor Sans (via the
+ * `.logo-wordmark` utility class).
  */
 export function Footer() {
   return (
@@ -39,14 +40,13 @@ export function Footer() {
               aria-label="Welta Chikankari — Home"
               className="inline-flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-gold-soft)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-navy-ink)]"
             >
-              <Image
-                src="/logo.svg"
-                alt="Welta Chikankari"
-                width={56}
-                height={56}
-                className="w-14 h-14"
-              />
+              <span className="logo-wordmark text-[28px] sm:text-[32px] text-[var(--color-ivory)]">
+                Welta
+              </span>
             </Link>
+            <p className="mt-2 text-[10px] tracking-[0.42em] uppercase text-[var(--color-gold-soft)]">
+              Chikankari
+            </p>
             <p className="mt-6 max-w-sm text-[14px] leading-relaxed text-[var(--color-ivory-soft)]/80">
               Handcrafted Lucknowi chikankari, made by master karigars in
               the old by-lanes of Lucknow. Heirloom craft, designed for
