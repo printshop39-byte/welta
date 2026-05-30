@@ -80,11 +80,9 @@ export function Hero() {
               // CSS cascade allows short of !important on inline style,
               // and is immune to bundle caching.
               className="bg-[var(--color-navy-ink)] !text-[var(--color-ivory)] hover:bg-[var(--color-navy)] hover:!text-[var(--color-ivory)]"
-              style={{ color: "#FBF7EF" }}
             >
               <span
                 className="!text-[var(--color-ivory)]"
-                style={{ color: "#FBF7EF" }}
               >
                 Shop the atelier
               </span>
@@ -137,11 +135,9 @@ export function Hero() {
               // CSS cascade allows short of !important on inline style,
               // and is immune to bundle caching.
               className="bg-[var(--color-navy-ink)] !text-[var(--color-ivory)] hover:bg-[var(--color-navy)] hover:!text-[var(--color-ivory)]"
-              style={{ color: "#FBF7EF" }}
             >
               <span
                 className="!text-[var(--color-ivory)]"
-                style={{ color: "#FBF7EF" }}
               >
                 Shop the atelier
               </span>
