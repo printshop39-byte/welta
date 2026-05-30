@@ -225,7 +225,7 @@ export default function SizeGuidePage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-4 text-[12px] text-[var(--color-muted)] italic">
+          <p className="mt-4 text-[12px] text-[var(--color-muted)] not-italic">
             Extended sizes (4XL — 10XL) are highlighted in cream and
             crafted as bespoke pieces. See the sections below for
             details.
@@ -404,7 +404,7 @@ export default function SizeGuidePage() {
           <SectionEyebrow>For WhatsApp inquiries</SectionEyebrow>
           <SectionHeading>A note from the atelier</SectionHeading>
           <div className="mt-8 bg-[var(--color-ivory)] border border-[var(--color-line)] p-6 sm:p-8 text-[15px] leading-relaxed text-[var(--color-charcoal)]">
-            <p className="text-lg text-[var(--color-navy-ink)] italic">
+            <p className="text-lg text-[var(--color-navy-ink)] not-italic">
               Namaste from Welta Chikankari.
             </p>
             <p className="mt-4">
@@ -430,9 +430,9 @@ export default function SizeGuidePage() {
               measurement confirmation.
             </p>
             {/* Handwritten sign-off — Architects Daughter via the
-                .welta-handwritten-heading utility. Reads as the
+                . utility. Reads as the
                 atelier's signature at the foot of a letter. */}
-            <p className="welta-handwritten-heading mt-6 text-[18px] sm:text-[20px] text-[var(--color-gold-deep)]">
+            <p className=" mt-6 text-[18px] sm:text-[20px] text-[var(--color-gold-deep)]">
               Pure heritage. Perfect fit. Team Welta.
             </p>
           </div>

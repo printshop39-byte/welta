@@ -176,10 +176,10 @@ export function Hero() {
           <figure className="absolute -bottom-8 -left-8 bg-[var(--color-navy-ink)] text-[var(--color-ivory)] px-7 py-6 max-w-[280px] shadow-[0_24px_60px_-30px_rgba(13,23,41,0.45)]">
             {/* Kalam — handwritten karigar's note. Desktop-only
                 (this whole figure is hidden on mobile). */}
-            <blockquote className="welta-artisan-note text-[20px] leading-snug">
+            <blockquote className=" text-[20px] leading-snug">
               &ldquo;Each thread, a quiet act of devotion.&rdquo;
             </blockquote>
-            <figcaption className="mt-3 text-[10px] tracking-[0.32em] uppercase text-[var(--color-gold-soft)] not-italic">
+            <figcaption className="mt-3 text-[10px] tracking-[0.32em] uppercase text-[var(--color-gold-soft)] not-not-italic">
               — Master karigar, Chowk Lucknow
             </figcaption>
           </figure>

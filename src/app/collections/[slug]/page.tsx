@@ -47,7 +47,7 @@ export default async function CollectionPage({
           <p className="text-xs uppercase tracking-[0.38em] text-[var(--color-gold-deep)] mb-4">
             Collection
           </p>
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[var(--color-navy-ink)] leading-tight max-w-3xl">
+          <h1 className="font-sans text-4xl sm:text-5xl lg:text-6xl text-[var(--color-navy-ink)] leading-tight max-w-3xl">
             {collection.name}
           </h1>
           <p className="mt-5 max-w-2xl text-base sm:text-lg text-[var(--color-muted)] leading-relaxed">

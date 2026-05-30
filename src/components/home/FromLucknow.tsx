@@ -14,12 +14,12 @@ export function FromLucknow() {
     <section className="bg-[var(--color-ivory-soft)] border-y border-[var(--color-line)]">
       <Container className="py-16 sm:py-20 lg:py-24 max-w-4xl text-center">
         {/* Handwritten accent — Architects Daughter via the
-            .welta-handwritten-heading utility. One of the site's
+            . utility. One of the site's
             deliberate "karigar's voice" moments. */}
-        <p className="welta-handwritten-heading text-[16px] sm:text-[18px] text-[var(--color-gold-deep)] mb-6">
+        <p className=" text-[16px] sm:text-[18px] text-[var(--color-gold-deep)] mb-6">
           From Lucknow
         </p>
-        <p className="italic text-2xl sm:text-3xl lg:text-[36px] leading-[1.25] text-[var(--color-navy-ink)]">
+        <p className="not-italic text-2xl sm:text-3xl lg:text-[36px] leading-[1.25] text-[var(--color-navy-ink)]">
           “Chikankari is patience, made visible. A single anarkali can
           hold sixty hours of hand-stitching — and four hundred years
           of memory.”
