@@ -72,13 +72,15 @@ export function Hero() {
               as="link"
               href="/collections"
               variant="primary"
-              // Hero-local contrast override: bg = navy-ink (darker
-              // base than the default --color-navy) with explicit
-              // ivory text. This guarantees the "Shop the Atelier"
-              // label stays legible regardless of font-swap timing.
-              className="bg-[var(--color-navy-ink)] text-[var(--color-ivory)] hover:bg-[var(--color-navy)]"
+              // Hero-local contrast override with !important to win
+              // against any cascade (a { color: inherit }, font-swap
+              // flash, or another `text-*` Tailwind utility appearing
+              // later in the compiled stylesheet). The inner span also
+              // gets !text-ivory so a wrapping anchor's inherit can't
+              // re-paint the label dark.
+              className="bg-[var(--color-navy-ink)] !text-[var(--color-ivory)] hover:bg-[var(--color-navy)] hover:!text-[var(--color-ivory)]"
             >
-              Shop the atelier
+              <span className="!text-[var(--color-ivory)]">Shop the atelier</span>
             </Button>
             <Link
               href="/about"
@@ -120,13 +122,15 @@ export function Hero() {
               as="link"
               href="/collections"
               variant="primary"
-              // Hero-local contrast override: bg = navy-ink (darker
-              // base than the default --color-navy) with explicit
-              // ivory text. This guarantees the "Shop the Atelier"
-              // label stays legible regardless of font-swap timing.
-              className="bg-[var(--color-navy-ink)] text-[var(--color-ivory)] hover:bg-[var(--color-navy)]"
+              // Hero-local contrast override with !important to win
+              // against any cascade (a { color: inherit }, font-swap
+              // flash, or another `text-*` Tailwind utility appearing
+              // later in the compiled stylesheet). The inner span also
+              // gets !text-ivory so a wrapping anchor's inherit can't
+              // re-paint the label dark.
+              className="bg-[var(--color-navy-ink)] !text-[var(--color-ivory)] hover:bg-[var(--color-navy)] hover:!text-[var(--color-ivory)]"
             >
-              Shop the atelier
+              <span className="!text-[var(--color-ivory)]">Shop the atelier</span>
             </Button>
             <Link
               href="/about"
