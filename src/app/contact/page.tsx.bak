@@ -15,7 +15,7 @@ export default function ContactPage() {
         <p className="text-xs uppercase tracking-[0.38em] text-[var(--color-gold-deep)] mb-4">
           Atelier Welta
         </p>
-        <h1 className="text-4xl sm:text-5xl text-[var(--color-navy-ink)] leading-tight">
+        <h1 className="font-serif text-4xl sm:text-5xl text-[var(--color-navy-ink)] leading-tight">
           We&rsquo;d love to hear from you.
         </h1>
         <p className="mt-5 max-w-2xl text-base sm:text-lg text-[var(--color-muted)] leading-relaxed">

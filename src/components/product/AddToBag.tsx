@@ -81,12 +81,25 @@ export function AddToBag({ product }: AddToBagProps) {
 
   return (
     <div className="mt-10">
-      <p
-        id={`size-label-${product.id}`}
-        className="text-xs uppercase tracking-[0.28em] text-[var(--color-muted)] mb-3"
-      >
-        Size
-      </p>
+      <div className="flex items-baseline justify-between mb-3 gap-3">
+        <p
+          id={`size-label-${product.id}`}
+          className="text-xs uppercase tracking-[0.28em] text-[var(--color-muted)]"
+        >
+          Size
+        </p>
+        {/* Tiny support link — opens /size-guide in a new tab so the
+            customer's add-to-bag flow isn't interrupted. No JS, no
+            behavior change to the picker. */}
+        <a
+          href="/size-guide"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[10px] tracking-[0.22em] uppercase text-[var(--color-gold-deep)] hover:text-[var(--color-navy-ink)] transition-colors"
+        >
+          Size guide ↗
+        </a>
+      </div>
       <div
         role="radiogroup"
         aria-labelledby={`size-label-${product.id}`}

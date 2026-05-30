@@ -14,7 +14,7 @@ export default function AboutPage() {
         <p className="text-xs uppercase tracking-[0.38em] text-[var(--color-gold-deep)] mb-4">
           Our story
         </p>
-        <h1 className="text-4xl sm:text-5xl text-[var(--color-navy-ink)] leading-tight">
+        <h1 className="font-serif text-4xl sm:text-5xl text-[var(--color-navy-ink)] leading-tight">
           400 years of chikankari, made for the way you live now.
         </h1>
         <div className="mt-10 space-y-6 text-base sm:text-lg text-[var(--color-charcoal)] leading-relaxed">
@@ -39,7 +39,7 @@ export default function AboutPage() {
           </p>
         </div>
         <div id="care" className="mt-16">
-          <h2 className="text-2xl text-[var(--color-navy-ink)] mb-4">
+          <h2 className="font-serif text-2xl text-[var(--color-navy-ink)] mb-4">
             Care
           </h2>
           <p className="text-[var(--color-charcoal)] leading-relaxed">
@@ -49,7 +49,7 @@ export default function AboutPage() {
           </p>
         </div>
         <div id="shipping" className="mt-12">
-          <h2 className="text-2xl text-[var(--color-navy-ink)] mb-4">
+          <h2 className="font-serif text-2xl text-[var(--color-navy-ink)] mb-4">
             Shipping & Returns
           </h2>
           <p className="text-[var(--color-charcoal)] leading-relaxed">

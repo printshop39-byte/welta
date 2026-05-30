@@ -29,7 +29,7 @@ export function StorySection() {
           <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.42em] text-[var(--color-gold-soft)] mb-5">
             The craft
           </p>
-          <h2 className="text-[28px] sm:text-4xl lg:text-[44px] leading-[1.1] tracking-[-0.005em]">
+          <h2 className="font-serif text-[28px] sm:text-4xl lg:text-[44px] leading-[1.1] tracking-[-0.005em]">
             A craft passed down through generations, made for today.
           </h2>
           <p className="mt-6 text-[15px] sm:text-base text-[var(--color-ivory-soft)]/85 leading-relaxed max-w-xl">
@@ -57,7 +57,7 @@ export function StorySection() {
 function Highlight({ title, detail }: { title: string; detail: string }) {
   return (
     <div className="border-t border-[var(--color-gold-soft)]/30 pt-4">
-      <p className="text-xl text-[var(--color-ivory)]">{title}</p>
+      <p className="font-serif text-xl text-[var(--color-ivory)]">{title}</p>
       <p className="mt-1 text-xs tracking-[0.18em] uppercase text-[var(--color-ivory-soft)]/65">
         {detail}
       </p>

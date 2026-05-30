@@ -37,7 +37,7 @@ export function CategoryGrid({ collections }: CategoryGridProps) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-navy-ink)]/75 via-[var(--color-navy-ink)]/10 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5 lg:p-6">
-                  <h3 className="text-xl sm:text-2xl lg:text-3xl text-[var(--color-ivory)] leading-tight">
+                  <h3 className="font-serif text-xl sm:text-2xl lg:text-3xl text-[var(--color-ivory)] leading-tight">
                     {c.name}
                   </h3>
                   <p className="mt-1 sm:mt-2 text-xs sm:text-sm text-[var(--color-ivory-soft)]/85 line-clamp-1">

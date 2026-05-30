@@ -58,7 +58,7 @@ export function Hero() {
           <p className="text-[10px] uppercase tracking-[0.42em] text-[var(--color-gold-deep)] mb-5">
             The Welta Edit · Lucknow
           </p>
-          <h1 className="text-[36px] leading-[1.04] sm:text-[44px] text-[var(--color-navy-ink)] tracking-[-0.01em] max-w-[16ch]">
+          <h1 className="font-serif text-[36px] leading-[1.04] sm:text-[44px] text-[var(--color-navy-ink)] tracking-[-0.01em] max-w-[16ch]">
             Hand-stitched chikankari, made for the way you live.
           </h1>
           <p className="mt-5 max-w-[44ch] text-[15px] sm:text-[16px] text-[var(--color-muted)] leading-relaxed">
@@ -115,7 +115,7 @@ export function Hero() {
           <p className="text-[11px] uppercase tracking-[0.42em] text-[var(--color-gold-deep)] mb-6">
             The Welta Edit · Lucknow
           </p>
-          <h1 className="text-[60px] xl:text-[68px] leading-[1.04] text-[var(--color-navy-ink)] tracking-[-0.01em] max-w-[16ch]">
+          <h1 className="font-serif text-[60px] xl:text-[68px] leading-[1.04] text-[var(--color-navy-ink)] tracking-[-0.01em] max-w-[16ch]">
             Hand-stitched chikankari, made for the way you live.
           </h1>
           <p className="mt-6 max-w-[44ch] text-[17px] text-[var(--color-muted)] leading-relaxed">
@@ -195,7 +195,7 @@ function Stat({ label, value }: { label: string; value: string }) {
       <dt className="text-[10px] tracking-[0.3em] uppercase text-[var(--color-muted)]">
         {label}
       </dt>
-      <dd className="mt-1 text-xl sm:text-2xl text-[var(--color-navy-ink)]">
+      <dd className="mt-1 font-serif text-xl sm:text-2xl text-[var(--color-navy-ink)]">
         {value}
       </dd>
     </div>

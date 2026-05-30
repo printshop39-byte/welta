@@ -22,7 +22,7 @@ export default async function CollectionsPage() {
           <p className="text-[11px] uppercase tracking-[0.32em] text-[var(--color-gold-deep)] font-medium mb-3">
             The atelier
           </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-[44px] text-[var(--color-navy-ink)] leading-[1.1]">
+          <h1 className="font-serif text-3xl sm:text-4xl lg:text-[44px] text-[var(--color-navy-ink)] leading-[1.1]">
             All collections
           </h1>
           <p className="mt-3 text-[15px] sm:text-base text-[var(--color-muted)] leading-relaxed">
@@ -58,7 +58,7 @@ export default async function CollectionsPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-navy-ink)]/70 via-transparent to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-2xl sm:text-3xl text-[var(--color-ivory)] leading-tight">
+                  <h3 className="font-serif text-2xl sm:text-3xl text-[var(--color-ivory)] leading-tight">
                     {c.name}
                   </h3>
                   <p className="mt-2 text-sm text-[var(--color-ivory-soft)]/85">

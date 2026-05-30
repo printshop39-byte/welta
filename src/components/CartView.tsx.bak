@@ -47,7 +47,7 @@ export function CartView() {
         <p className="text-xs uppercase tracking-[0.38em] text-[var(--color-gold-deep)] mb-4">
           Your bag
         </p>
-        <h1 className="text-4xl sm:text-5xl text-[var(--color-navy-ink)] leading-tight">
+        <h1 className="font-serif text-4xl sm:text-5xl text-[var(--color-navy-ink)] leading-tight">
           Your bag is currently empty.
         </h1>
         <p className="mt-5 max-w-xl mx-auto text-base text-[var(--color-muted)] leading-relaxed">
@@ -68,7 +68,7 @@ export function CartView() {
         <p className="text-xs uppercase tracking-[0.38em] text-[var(--color-gold-deep)] mb-3">
           Your bag
         </p>
-        <h1 className="text-3xl sm:text-4xl lg:text-[44px] text-[var(--color-navy-ink)] leading-[1.1]">
+        <h1 className="font-serif text-3xl sm:text-4xl lg:text-[44px] text-[var(--color-navy-ink)] leading-[1.1]">
           {count === 1 ? "1 piece in your bag" : `${count} pieces in your bag`}
         </h1>
 
@@ -95,7 +95,7 @@ export function CartView() {
         </dl>
         <div className="mt-6 pt-5 border-t border-[var(--color-line)] flex justify-between text-base">
           <span className="font-medium text-[var(--color-navy-ink)]">Total</span>
-          <span className="text-xl text-[var(--color-navy-ink)]">
+          <span className="font-serif text-xl text-[var(--color-navy-ink)]">
             {formatINR(subtotal)}
           </span>
         </div>
@@ -150,7 +150,7 @@ function LineItem({ item }: { item: CartItem }) {
         <div className="flex items-start justify-between gap-4">
           <div className="min-w-0">
             <Link href={`/products/${item.productSlug}`} className="block">
-              <h3 className="text-base sm:text-lg text-[var(--color-navy-ink)] leading-snug hover:text-[var(--color-gold-deep)] transition-colors">
+              <h3 className="font-serif text-base sm:text-lg text-[var(--color-navy-ink)] leading-snug hover:text-[var(--color-gold-deep)] transition-colors">
                 {item.productName}
               </h3>
             </Link>

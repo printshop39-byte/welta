@@ -75,7 +75,7 @@ export default function SizeGuidePage() {
           <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.42em] text-[var(--color-gold-deep)] mb-5">
             The Welta Atelier · Lucknow
           </p>
-          <h1 className="text-[34px] leading-[1.05] sm:text-[44px] lg:text-[52px] text-[var(--color-navy-ink)] tracking-[-0.005em]">
+          <h1 className="font-serif text-[34px] leading-[1.05] sm:text-[44px] lg:text-[52px] text-[var(--color-navy-ink)] tracking-[-0.005em]">
             Size Guide &amp; Custom Fit
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-[15px] sm:text-[17px] text-[var(--color-muted)] leading-relaxed">
@@ -239,7 +239,7 @@ export default function SizeGuidePage() {
           <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.42em] text-[var(--color-gold-soft)] mb-5">
             Section 03 · Crafted just for you
           </p>
-          <h2 className="text-[28px] sm:text-[36px] lg:text-[42px] leading-[1.1] tracking-[-0.005em]">
+          <h2 className="font-serif text-[28px] sm:text-[36px] lg:text-[42px] leading-[1.1] tracking-[-0.005em]">
             Custom &amp; plus-size orders
           </h2>
           <div className="mt-8 space-y-5 max-w-2xl text-[15px] sm:text-[16px] leading-relaxed text-[var(--color-ivory-soft)]/90">
@@ -365,7 +365,7 @@ export default function SizeGuidePage() {
             <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.42em] text-[var(--color-gold-soft)] mb-5">
               Heritage, in your size
             </p>
-            <h2 className="text-[28px] sm:text-[36px] lg:text-[42px] leading-[1.1] tracking-[-0.005em]">
+            <h2 className="font-serif text-[28px] sm:text-[36px] lg:text-[42px] leading-[1.1] tracking-[-0.005em]">
               Celebrate your fit with Welta
             </h2>
             <p className="mt-5 max-w-xl mx-auto text-[15px] sm:text-base leading-relaxed text-[var(--color-ivory-soft)]/85">
@@ -404,7 +404,7 @@ export default function SizeGuidePage() {
           <SectionEyebrow>For WhatsApp inquiries</SectionEyebrow>
           <SectionHeading>A note from the atelier</SectionHeading>
           <div className="mt-8 bg-[var(--color-ivory)] border border-[var(--color-line)] p-6 sm:p-8 text-[15px] leading-relaxed text-[var(--color-charcoal)]">
-            <p className="text-lg text-[var(--color-navy-ink)] italic">
+            <p className="font-serif text-lg text-[var(--color-navy-ink)] italic">
               Namaste from Welta Chikankari.
             </p>
             <p className="mt-4">
@@ -456,7 +456,7 @@ function SectionEyebrow({ children }: { children: React.ReactNode }) {
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="text-[28px] sm:text-[36px] lg:text-[42px] leading-[1.1] tracking-[-0.005em] text-[var(--color-navy-ink)]">
+    <h2 className="font-serif text-[28px] sm:text-[36px] lg:text-[42px] leading-[1.1] tracking-[-0.005em] text-[var(--color-navy-ink)]">
       {children}
     </h2>
   );
@@ -478,7 +478,7 @@ function Measure({ label, detail }: { label: string; detail: string }) {
 function PhilosophyCard({ title, body }: { title: string; body: string }) {
   return (
     <div className="bg-[var(--color-ivory-soft)] border border-[var(--color-line)] p-6 sm:p-7 h-full">
-      <h3 className="text-[20px] sm:text-[22px] text-[var(--color-navy-ink)] leading-snug">
+      <h3 className="font-serif text-[20px] sm:text-[22px] text-[var(--color-navy-ink)] leading-snug">
         {title}
       </h3>
       <p className="mt-4 text-[14px] sm:text-[15px] leading-relaxed text-[var(--color-charcoal)]">
@@ -512,11 +512,11 @@ function StepCard({
 }) {
   return (
     <li className="grid grid-cols-[40px_1fr] sm:grid-cols-[80px_1fr] gap-4 sm:gap-8">
-      <span className="text-2xl sm:text-3xl text-[var(--color-gold-deep)] tabular-nums">
+      <span className="font-serif text-2xl sm:text-3xl text-[var(--color-gold-deep)] tabular-nums">
         {step}
       </span>
       <div>
-        <h3 className="text-[20px] sm:text-[24px] text-[var(--color-navy-ink)] leading-snug">
+        <h3 className="font-serif text-[20px] sm:text-[24px] text-[var(--color-navy-ink)] leading-snug">
           {title}
         </h3>
         <div className="mt-3 text-[15px] sm:text-base text-[var(--color-charcoal)] leading-relaxed">
