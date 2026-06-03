@@ -32,6 +32,7 @@ export function MobileMenu({ links }: { links: NavLink[] }) {
         type="button"
         aria-label="Open menu"
         aria-expanded={open}
+        aria-controls="mobile-menu-panel"
         onClick={() => setOpen(true)}
         className="lg:hidden inline-flex items-center justify-center h-10 w-10 text-[var(--color-navy-ink)] hover:text-[var(--color-gold-deep)] transition-colors"
       >
@@ -41,7 +42,7 @@ export function MobileMenu({ links }: { links: NavLink[] }) {
       </button>
 
       {open && (
-        <div className="fixed inset-0 z-[80] lg:hidden" role="dialog" aria-modal="true">
+        <div id="mobile-menu-panel" className="fixed inset-0 z-[80] lg:hidden" role="dialog" aria-modal="true" aria-label="Mobile navigation menu">
           <button
             type="button"
             aria-label="Close menu"

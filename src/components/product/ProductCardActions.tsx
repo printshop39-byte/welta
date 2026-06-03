@@ -60,6 +60,7 @@ export function ProductCardActions({ product }: Props) {
         alt: image?.alt ?? product.name,
       },
       qty: 1,
+      ...(product.color ? { color: product.color } : {}),
       ...(product.sku ? { sku: product.sku } : {}),
     });
     notifyAddedToBag(product.name);

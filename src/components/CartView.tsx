@@ -19,7 +19,8 @@ function buildWhatsappUrl(items: CartItem[], subtotal: number): string {
     // SKU/Item Code rides in square brackets right after the name when
     // present so the atelier team can pull it from inventory fast.
     const codeTag = i.sku ? ` [${i.sku}]` : "";
-    return `• ${i.productName}${codeTag} (${i.variantLabel}) × ${i.qty} — ${formatINR(
+    const colorTag = i.color ? `, ${i.color}` : "";
+    return `• ${i.productName}${codeTag} (${i.variantLabel}${colorTag}) × ${i.qty} — ${formatINR(
       i.unitPrice * i.qty,
     )}`;
   });
@@ -156,6 +157,7 @@ function LineItem({ item }: { item: CartItem }) {
             </Link>
             <p className="mt-1 text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
               Size · {item.variantLabel}
+              {item.color ? ` · ${item.color}` : ""}
             </p>
             {item.sku && (
               <p className="mt-1 text-[10px] tracking-[0.2em] uppercase text-[var(--color-muted)]/80">

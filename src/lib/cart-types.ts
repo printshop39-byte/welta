@@ -20,6 +20,9 @@ export type CartItem = {
   unitMrp: number;
   image: { url: string; alt: string };
   qty: number;
+  /** Selected/representative colour name, when the product carries
+   *  colour data. Surfaced in the cart drawer and /cart line item. */
+  color?: string;
   /** MyBillBook SKU / Item Code, when the product has one.
    *  Surfaced in the cart UI and the WhatsApp order message so the
    *  atelier team can fulfil from inventory without guessing. */

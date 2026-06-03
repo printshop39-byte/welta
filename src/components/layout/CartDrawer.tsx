@@ -20,7 +20,8 @@ const WHATSAPP_NUMBER =
 function buildWhatsappUrl(items: CartItem[], subtotal: number): string {
   const lines = items.map((i) => {
     const codeTag = i.sku ? ` [${i.sku}]` : "";
-    return `• ${i.productName}${codeTag} (${i.variantLabel}) × ${i.qty} — ${formatINR(
+    const colorTag = i.color ? `, ${i.color}` : "";
+    return `• ${i.productName}${codeTag} (${i.variantLabel}${colorTag}) × ${i.qty} — ${formatINR(
       i.unitPrice * i.qty,
     )}`;
   });
@@ -44,7 +45,7 @@ function buildWhatsappUrl(items: CartItem[], subtotal: number): string {
  *   mobile so it's comfortably usable, capped at max-w-md on desktop.
  * - Closes on X, overlay click, and Escape.
  * - Body scroll locked while open.
- * - z-[90]: above the sticky header (z-[70]) and mobile menu (z-[80]).
+ * - z-[100]: above the sticky header (z-[70]) and mobile menu (z-[80]).
  *
  * Reuses the existing cartStore + useCart — no second cart system.
  */
@@ -73,7 +74,7 @@ export function CartDrawer() {
 
   return (
     <div
-      className="fixed inset-0 z-[90]"
+      className="fixed inset-0 z-[100]"
       role="dialog"
       aria-modal="true"
       aria-label="Your bag"
@@ -198,6 +199,7 @@ function DrawerLine({ item }: { item: CartItem }) {
             </h3>
             <p className="mt-1 text-[10px] uppercase tracking-[0.2em] text-[var(--color-muted)]">
               Size · {item.variantLabel}
+              {item.color ? ` · ${item.color}` : ""}
             </p>
           </div>
           <p className="text-sm font-medium text-[var(--color-navy-ink)] tabular-nums shrink-0">

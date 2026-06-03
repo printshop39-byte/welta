@@ -65,6 +65,11 @@ export function AddToBag({ product }: AddToBagProps) {
         alt: image?.alt ?? product.name,
       },
       qty,
+      // Selected colour — prefer the variant's colour, fall back to the
+      // product-level colour. Surfaced in the cart drawer / line item.
+      ...(selected.color || product.color
+        ? { color: selected.color ?? product.color }
+        : {}),
       // Optional MyBillBook SKU — preserved for the atelier team in
       // the WhatsApp order message. Undefined for hand-made products
       // that don't carry a code.

@@ -13,8 +13,8 @@ import { toastStore, drawerStore } from "@/lib/ui-store";
  *   restarts the countdown cleanly. No timers run during render.
  * - Bottom-centre on mobile, top-right on desktop — clear of the sticky
  *   header and the cart drawer.
- * - z-[100]: above everything (header z-[70], menu z-[80], drawer
- *   z-[90]) so confirmation is always visible.
+ * - z-[110]: above everything (header z-[70], menu z-[80], drawer
+ *   z-[100]) so confirmation is always visible.
  *
  * Hydration-safe: server + first client render show nothing (toast is
  * null), so SSR HTML matches.
@@ -35,7 +35,7 @@ export function CartToaster() {
 
   return (
     <div
-      className="fixed z-[100] left-4 right-4 bottom-4 sm:left-auto sm:right-6 sm:top-24 sm:bottom-auto sm:w-[360px]"
+      className="fixed z-[110] left-4 right-4 bottom-4 sm:left-auto sm:right-6 sm:top-24 sm:bottom-auto sm:w-[360px]"
       role="status"
       aria-live="polite"
     >
