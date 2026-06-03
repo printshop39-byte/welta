@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { MobileMenu } from "@/components/layout/MobileMenu";
-import { CartBadge } from "@/components/layout/CartBadge";
+import { CartButton } from "@/components/layout/CartButton";
 
 const navLinks = [
   { href: "/collections/anarkali", label: "Anarkali" },
@@ -29,7 +29,7 @@ const navLinks = [
  */
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 bg-[var(--color-ivory)]/95 backdrop-blur-md border-b border-[var(--color-line)]">
+    <header className="sticky top-0 z-[70] bg-[var(--color-ivory)]/95 backdrop-blur-md border-b border-[var(--color-line)]">
       {/* Announcement bar */}
       <div className="bg-[var(--color-navy-ink)] text-[var(--color-ivory)] text-[10px] sm:text-[11px] tracking-[0.32em] uppercase">
         <Container className="flex h-8 sm:h-9 items-center justify-center text-center">
@@ -89,14 +89,7 @@ export function Header() {
           >
             <SearchIcon />
           </Link>
-          <Link
-            href="/cart"
-            aria-label="Cart"
-            className="relative inline-flex h-10 w-10 items-center justify-center hover:text-[var(--color-gold-deep)] transition-colors"
-          >
-            <BagIcon />
-            <CartBadge />
-          </Link>
+          <CartButton />
         </div>
       </Container>
     </header>
@@ -116,23 +109,6 @@ function SearchIcon() {
     >
       <circle cx="9" cy="9" r="6" />
       <path d="M14 14l4 4" strokeLinecap="round" />
-    </svg>
-  );
-}
-
-function BagIcon() {
-  return (
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.4"
-      aria-hidden="true"
-    >
-      <path d="M4 6h12l-1 11H5L4 6z" strokeLinejoin="round" />
-      <path d="M7 6V4a3 3 0 016 0v2" strokeLinejoin="round" />
     </svg>
   );
 }

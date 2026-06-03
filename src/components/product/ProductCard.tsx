@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "@/types/product";
 import { formatINR } from "@/lib/format";
+import { ProductCardActions } from "@/components/product/ProductCardActions";
 
 type ProductCardProps = {
   product: Product;
@@ -35,7 +36,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
     <article className="group flex h-full flex-col">
       <Link
         href={`/products/${product.slug}`}
-        className="flex h-full flex-col focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-ivory)]"
+        className="flex flex-col focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-ivory)]"
         aria-label={product.name}
       >
         <div className="relative aspect-[4/5] overflow-hidden bg-[var(--color-cream)]">
@@ -56,7 +57,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
           )}
         </div>
 
-        <div className="pt-4 sm:pt-5 flex flex-col gap-2 flex-1">
+        <div className="pt-4 sm:pt-5 flex flex-col gap-2">
           <h3 className="text-[15px] sm:text-base lg:text-lg text-[var(--color-navy-ink)] leading-snug line-clamp-2 group-hover:text-[var(--color-gold-deep)] transition-colors">
             {product.name}
           </h3>
@@ -70,14 +71,23 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
               </span>
             )}
           </div>
-          {/* "View piece" — always there for screen readers, gentle
-              visual cue on hover for sighted users. Replaces the loud
-              "Choose Options" button. */}
-          <span className="mt-auto pt-3 inline-flex items-center gap-1.5 text-[10px] sm:text-[11px] tracking-[0.28em] uppercase text-[var(--color-muted)] group-hover:text-[var(--color-navy-ink)] transition-colors">
-            View piece
-            <span aria-hidden="true" className="translate-x-0 group-hover:translate-x-1 transition-transform">→</span>
-          </span>
         </div>
+      </Link>
+
+      {/* Quick-buy: sizes, colour, compact Add to bag. Lives outside the
+          card <Link> so there are no nested interactive elements. */}
+      <ProductCardActions product={product} />
+
+      {/* "View piece" — secondary route to the full PDP. Always present
+          for screen readers, gentle hover cue for sighted users. Sits at
+          the bottom so cards in a row stay aligned. */}
+      <Link
+        href={`/products/${product.slug}`}
+        className="mt-auto pt-3 inline-flex items-center gap-1.5 text-[10px] sm:text-[11px] tracking-[0.28em] uppercase text-[var(--color-muted)] hover:text-[var(--color-navy-ink)] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-ivory)]"
+        aria-label={`View ${product.name}`}
+      >
+        View piece
+        <span aria-hidden="true" className="translate-x-0 hover:translate-x-1 transition-transform">→</span>
       </Link>
     </article>
   );

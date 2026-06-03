@@ -15,8 +15,13 @@ export function MobileMenu({ links }: { links: NavLink[] }) {
     if (open) {
       const prev = document.body.style.overflow;
       document.body.style.overflow = "hidden";
+      const onKey = (e: KeyboardEvent) => {
+        if (e.key === "Escape") setOpen(false);
+      };
+      window.addEventListener("keydown", onKey);
       return () => {
         document.body.style.overflow = prev;
+        window.removeEventListener("keydown", onKey);
       };
     }
   }, [open]);
@@ -36,7 +41,7 @@ export function MobileMenu({ links }: { links: NavLink[] }) {
       </button>
 
       {open && (
-        <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true">
+        <div className="fixed inset-0 z-[80] lg:hidden" role="dialog" aria-modal="true">
           <button
             type="button"
             aria-label="Close menu"

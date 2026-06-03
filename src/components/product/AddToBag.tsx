@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { Product } from "@/types/product";
 import { cartStore } from "@/lib/cart";
+import { notifyAddedToBag, drawerStore } from "@/lib/ui-store";
 
 type AddToBagProps = {
   product: Product;
@@ -71,6 +72,8 @@ export function AddToBag({ product }: AddToBagProps) {
     });
     setError(null);
     setJustAdded(true);
+    notifyAddedToBag(product.name);
+    drawerStore.open();
     window.setTimeout(() => setJustAdded(false), 1800);
   }
 
