@@ -83,6 +83,9 @@ export function MobileMenu({ links }: { links: NavLink[] }) {
                 <Link href="/search" onClick={() => setOpen(false)} className="block">
                   Search the atelier
                 </Link>
+                <Link href="/wishlist" onClick={() => setOpen(false)} className="block">
+                  Your wishlist
+                </Link>
                 <Link href="/cart" onClick={() => setOpen(false)} className="block">
                   Your bag
                 </Link>

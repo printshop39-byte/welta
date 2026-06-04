@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { MobileMenu } from "@/components/layout/MobileMenu";
 import { CartButton } from "@/components/layout/CartButton";
+import { WishlistButton } from "@/components/layout/WishlistButton";
 
 const navLinks = [
   { href: "/collections/anarkali", label: "Anarkali" },
@@ -89,6 +90,7 @@ export function Header() {
           >
             <SearchIcon />
           </Link>
+          <WishlistButton />
           <CartButton />
         </div>
       </Container>

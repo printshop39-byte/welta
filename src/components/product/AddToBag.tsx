@@ -3,7 +3,8 @@
 import { useState } from "react";
 import type { Product } from "@/types/product";
 import { cartStore } from "@/lib/cart";
-import { notifyAddedToBag, drawerStore } from "@/lib/ui-store";
+import { notifyAddedToBag, notifyWishlist, drawerStore } from "@/lib/ui-store";
+import { wishlistStore, useIsWishlisted } from "@/lib/wishlist";
 
 type AddToBagProps = {
   product: Product;
@@ -34,7 +35,9 @@ export function AddToBag({ product }: AddToBagProps) {
   const [qty, setQty] = useState(1);
   const [error, setError] = useState<string | null>(null);
   const [justAdded, setJustAdded] = useState(false);
-  const [wishlistMsg, setWishlistMsg] = useState(false);
+  // Wishlist state from the persisted store. False on the server / first
+  // client render (empty snapshot), then the real value after hydration.
+  const wishlisted = useIsWishlisted(product.id);
 
   const selected = product.variants.find((v) => v.id === selectedId) ?? null;
   const canAdd = !!selected && selected.inStock;
@@ -83,8 +86,19 @@ export function AddToBag({ product }: AddToBagProps) {
   }
 
   function handleWishlist() {
-    setWishlistMsg(true);
-    window.setTimeout(() => setWishlistMsg(false), 2200);
+    const image = product.images[0];
+    const added = wishlistStore.toggle({
+      id: product.id,
+      slug: product.slug,
+      name: product.name,
+      price: product.price,
+      mrp: product.mrp,
+      image: {
+        url: image?.url ?? "/placeholders/placeholder.svg",
+        alt: image?.alt ?? product.name,
+      },
+    });
+    notifyWishlist(product.name, added);
   }
 
   return (
@@ -195,12 +209,41 @@ export function AddToBag({ product }: AddToBagProps) {
         <button
           type="button"
           onClick={handleWishlist}
-          aria-label="Add to wishlist (coming soon)"
-          className="flex-1 relative inline-flex items-center justify-center gap-2 px-7 py-3 min-h-[44px] text-[12px] sm:text-sm font-medium tracking-[0.2em] uppercase transition-colors duration-200 bg-transparent text-[var(--color-navy)] border border-[var(--color-navy)] hover:bg-[var(--color-navy)] hover:text-[var(--color-ivory)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-ivory)]"
+          aria-pressed={wishlisted}
+          aria-label={
+            wishlisted
+              ? `Remove ${product.name} from wishlist`
+              : `Add ${product.name} to wishlist`
+          }
+          className={`flex-1 relative inline-flex items-center justify-center gap-2 px-7 py-3 min-h-[44px] text-[12px] sm:text-sm font-medium tracking-[0.2em] uppercase transition-colors duration-200 border border-[var(--color-navy)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-ivory)] ${
+            wishlisted
+              ? "bg-[var(--color-navy)] text-[var(--color-ivory)] hover:bg-[var(--color-navy-ink)]"
+              : "bg-transparent text-[var(--color-navy)] hover:bg-[var(--color-navy)] hover:text-[var(--color-ivory)]"
+          }`}
         >
-          {wishlistMsg ? "Coming soon" : "Add to Wishlist"}
+          <HeartIcon filled={wishlisted} />
+          {wishlisted ? "In Wishlist" : "Add to Wishlist"}
         </button>
       </div>
     </div>
+  );
+}
+
+function HeartIcon({ filled }: { filled: boolean }) {
+  return (
+    <svg
+      width="15"
+      height="15"
+      viewBox="0 0 20 20"
+      fill={filled ? "currentColor" : "none"}
+      stroke="currentColor"
+      strokeWidth="1.5"
+      aria-hidden="true"
+    >
+      <path
+        d="M10 17s-6-3.7-6-8.2A3.3 3.3 0 0 1 10 6a3.3 3.3 0 0 1 6 2.8C16 13.3 10 17 10 17z"
+        strokeLinejoin="round"
+      />
+    </svg>
   );
 }

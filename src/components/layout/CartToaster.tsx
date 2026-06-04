@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect } from "react";
 import { useToast } from "@/lib/ui-hooks";
 import { toastStore, drawerStore } from "@/lib/ui-store";
@@ -50,25 +51,41 @@ export function CartToaster() {
         </span>
         <div className="min-w-0 flex-1">
           <p className="text-[12px] tracking-[0.18em] uppercase text-[var(--color-gold-soft)]">
-            Added to bag
+            {toast.title ?? "Added to bag"}
           </p>
           {toast.productName && (
             <p className="mt-1 text-sm leading-snug line-clamp-2">
               {toast.productName}
             </p>
           )}
-          <div className="mt-3 flex items-center gap-4">
-            <button
-              type="button"
-              onClick={() => {
-                toastStore.dismiss();
-                drawerStore.open();
-              }}
-              className="text-[11px] tracking-[0.2em] uppercase text-[var(--color-ivory)] underline underline-offset-4 hover:text-[var(--color-gold-soft)] transition-colors"
-            >
-              View bag
-            </button>
-          </div>
+          {/* Action row: a custom link action (e.g. View wishlist) when
+              the toast carries one, otherwise the default "View bag"
+              button that opens the cart drawer. A toast with no action
+              (e.g. "Removed from wishlist") shows just the headline. */}
+          {toast.actionHref ? (
+            <div className="mt-3 flex items-center gap-4">
+              <Link
+                href={toast.actionHref}
+                onClick={() => toastStore.dismiss()}
+                className="text-[11px] tracking-[0.2em] uppercase text-[var(--color-ivory)] underline underline-offset-4 hover:text-[var(--color-gold-soft)] transition-colors"
+              >
+                {toast.actionLabel ?? "View"}
+              </Link>
+            </div>
+          ) : toast.title ? null : (
+            <div className="mt-3 flex items-center gap-4">
+              <button
+                type="button"
+                onClick={() => {
+                  toastStore.dismiss();
+                  drawerStore.open();
+                }}
+                className="text-[11px] tracking-[0.2em] uppercase text-[var(--color-ivory)] underline underline-offset-4 hover:text-[var(--color-gold-soft)] transition-colors"
+              >
+                View bag
+              </button>
+            </div>
+          )}
         </div>
         <button
           type="button"

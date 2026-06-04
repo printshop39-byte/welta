@@ -58,6 +58,20 @@ export type Toast = {
   id: number;
   /** Product name shown in the toast, when known. */
   productName?: string;
+  /** Headline label. Defaults to "Added to bag" when omitted (so the
+   *  existing add-to-bag callers keep working unchanged). */
+  title?: string;
+  /** Optional secondary action link (e.g. View wishlist). When omitted
+   *  the toaster falls back to its default "View bag" action. */
+  actionLabel?: string;
+  actionHref?: string;
+};
+
+export type ToastOptions = {
+  productName?: string;
+  title?: string;
+  actionLabel?: string;
+  actionHref?: string;
 };
 
 type ToastState = { toast: Toast | null };
@@ -84,10 +98,21 @@ export const toastStore = {
   getServerSnapshot(): ToastState {
     return TOAST_EMPTY;
   },
-  show(productName?: string) {
+  // Accepts either a bare product-name string (legacy add-to-bag call)
+  // or a full options object. Either way, undefined fields are simply
+  // omitted from the toast.
+  show(input?: string | ToastOptions) {
     toastSeq += 1;
+    const opts: ToastOptions =
+      typeof input === "string" ? { productName: input } : input ?? {};
     toastState = {
-      toast: productName ? { id: toastSeq, productName } : { id: toastSeq },
+      toast: {
+        id: toastSeq,
+        ...(opts.productName ? { productName: opts.productName } : {}),
+        ...(opts.title ? { title: opts.title } : {}),
+        ...(opts.actionLabel ? { actionLabel: opts.actionLabel } : {}),
+        ...(opts.actionHref ? { actionHref: opts.actionHref } : {}),
+      },
     };
     notifyToast();
   },
@@ -105,4 +130,18 @@ export const toastStore = {
  */
 export function notifyAddedToBag(productName?: string) {
   toastStore.show(productName);
+}
+
+/**
+ * Toast for wishlist add. Pass `added: false` when an item was removed so
+ * the headline reads "Removed from wishlist" with no action link.
+ */
+export function notifyWishlist(productName?: string, added = true) {
+  toastStore.show({
+    ...(productName ? { productName } : {}),
+    title: added ? "Added to wishlist" : "Removed from wishlist",
+    ...(added
+      ? { actionLabel: "View wishlist", actionHref: "/wishlist" }
+      : {}),
+  });
 }
