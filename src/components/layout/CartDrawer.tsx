@@ -85,9 +85,13 @@ export function CartDrawer() {
         className="absolute inset-0 bg-[var(--color-navy-ink)]/40"
         onClick={() => drawerStore.close()}
       />
-      <div className="absolute right-0 top-0 h-full w-[92%] max-w-md bg-[var(--color-ivory)] shadow-2xl flex flex-col">
-        {/* Header */}
-        <div className="flex items-center justify-between px-5 sm:px-6 h-16 border-b border-[var(--color-line)]">
+      {/* Panel wraps its content height (h-auto) and only grows up to the
+          viewport — capped with max-h-[100dvh] — so a 1-item bag is a
+          compact top-right card, not a full-height panel with blank space.
+          The panel itself scrolls when many items overflow the cap. */}
+      <div className="absolute right-0 top-0 h-auto max-h-[100dvh] w-[92%] max-w-md overflow-y-auto bg-[var(--color-ivory)] shadow-2xl">
+        {/* Header — sticky so it stays visible if the panel scrolls. */}
+        <div className="sticky top-0 z-10 flex items-center justify-between px-5 sm:px-6 h-16 border-b border-[var(--color-line)] bg-[var(--color-ivory)]">
           <span className="text-[10px] tracking-[0.34em] uppercase text-[var(--color-gold-deep)]">
             {count === 1 ? "Your bag · 1 piece" : `Your bag · ${count} pieces`}
           </span>
@@ -112,7 +116,7 @@ export function CartDrawer() {
         </div>
 
         {items.length === 0 ? (
-          <div className="flex-1 flex flex-col items-center justify-center px-8 text-center">
+          <div className="flex flex-col items-center justify-center px-8 py-16 text-center">
             <p className="text-lg text-[var(--color-navy-ink)]">
               Your bag is empty.
             </p>
@@ -128,12 +132,11 @@ export function CartDrawer() {
             </Link>
           </div>
         ) : (
-          // Items + footer share one scrollable column. The footer
-          // follows the items in normal flow (mt-6 / border-t / pt-6),
-          // so with 1–2 items it sits right under them — no flex spacer
-          // pushing it to the bottom. With many items the whole column
-          // scrolls naturally.
-          <div className="flex-1 overflow-y-auto px-5 sm:px-6 py-6">
+          // Items + footer in normal flow inside the content-height
+          // panel. The footer follows the items (mt-6 / border-t / pt-6),
+          // so a 1–2 item bag is one compact block. The panel (not this
+          // div) scrolls when many items exceed the max-h cap.
+          <div className="px-5 sm:px-6 py-6">
             <ul className="divide-y divide-[var(--color-line)]">
               {items.map((item) => (
                 <DrawerLine key={item.key} item={item} />
