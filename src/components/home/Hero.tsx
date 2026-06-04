@@ -1,85 +1,81 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 
-/**
- * Cinematic full-bleed hero.
- *
- * One immersive image that covers the whole section (Next Image `fill`
- * + object-cover), a soft navy overlay for contrast, and minimal luxury
- * copy set in ivory over the image — center-left, lower third.
- *
- * Layout:
- *   - min-h-[76vh] on mobile, min-h-[86vh] on desktop.
- *   - The section sits in normal flow BELOW the sticky header, so the
- *     header never covers the copy; generous top/bottom padding keeps
- *     the text clear of both the fold and the section edges.
- *   - object-position center on desktop, center-top on mobile so the
- *     embroidery crops gracefully on tall portrait screens.
- *
- * Brand: ivory text on image, gold eyebrow, navy/ivory CTAs matching the
- * existing Welta button language. No slideshow, no client JS — a pure
- * server component, so there's no hydration risk and no Date.now /
- * Math.random anywhere.
- */
 export function Hero() {
   return (
-    <section className="relative min-h-[76vh] sm:min-h-[86vh] overflow-hidden bg-[var(--color-navy-ink)]">
-      {/* Full-bleed image */}
-      <Image
-        src="/products/welta-hero-white-chikankari.jpg"
-        alt="Handcrafted Lucknowi chikankari piece in ivory white, hand-embroidered by master karigars of the Welta atelier in Lucknow"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover object-[center_top] sm:object-center"
-      />
+    <section className="bg-[var(--color-ivory-soft)] border-b border-[var(--color-line)]">
+      <Container className="pt-8 pb-14 sm:pt-12 sm:pb-20">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-center lg:gap-14">
+          <div className="order-1 lg:order-2 lg:col-span-7">
+            <div className="relative aspect-[4/5] w-full overflow-hidden bg-[var(--color-cream)] sm:aspect-[5/4] lg:aspect-[4/5]">
+              <Image
+                src="/products/welta-hero-white-chikankari.jpg"
+                alt="Welta Chikankari handcrafted white chikankari outfit"
+                fill
+                priority
+                sizes="(min-width: 1024px) 56vw, 100vw"
+                className="object-cover object-center"
+              />
 
-      {/* Overlay — a flat soft layer for baseline contrast, plus a
-          left-to-right navy gradient so the copy side stays readable
-          while the right of the image breathes. Premium and cinematic,
-          not too dark. */}
-      <div aria-hidden="true" className="absolute inset-0 bg-black/35" />
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-r from-[var(--color-navy-ink)]/75 via-[var(--color-navy-ink)]/25 to-transparent"
-      />
-      {/* A gentle foot-of-frame darkening to seat the copy. */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-[var(--color-navy-ink)]/70 to-transparent"
-      />
+              <div className="absolute left-4 top-4 bg-[var(--color-ivory)]/90 px-4 py-2 text-[10px] uppercase tracking-[0.32em] text-[var(--color-navy-ink)] shadow-sm sm:left-6 sm:top-6">
+                Welta Edit
+              </div>
+            </div>
+          </div>
 
-      {/* Content — center-left, lower third on desktop; comfortably
-          padded on mobile so nothing overflows or hides under the
-          sticky header. */}
-      <Container className="relative z-10 flex min-h-[76vh] sm:min-h-[86vh] items-end sm:items-center pt-24 pb-14 sm:py-24">
-        <div className="max-w-[42rem]">
-          <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.42em] text-[var(--color-gold-soft)] mb-5">
-            The Welta Edit · Lucknow
-          </p>
-          <h1 className="text-[34px] leading-[1.06] sm:text-[52px] xl:text-[60px] text-[var(--color-ivory)] tracking-[-0.01em] max-w-[18ch] [text-shadow:0_2px_24px_rgba(13,23,41,0.45)]">
-            Hand-stitched chikankari, made for the way you live.
-          </h1>
-          <p className="mt-5 sm:mt-6 max-w-[46ch] text-[15px] sm:text-[17px] text-[var(--color-ivory)]/85 leading-relaxed">
-            Anarkalis, kurta sets and dupattas embroidered by master
-            karigars in the old by-lanes of Lucknow.
-          </p>
+          <div className="order-2 lg:order-1 lg:col-span-5">
+            <p className="text-[10px] uppercase tracking-[0.48em] text-[var(--color-gold-deep)] sm:text-[11px]">
+              The Welta Edit · Lucknow
+            </p>
 
-          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
-            <Link
-              href="/collections"
-              className="inline-flex items-center justify-center px-7 py-3 min-h-[48px] text-[12px] sm:text-sm font-medium tracking-[0.2em] uppercase bg-[var(--color-ivory)] text-[var(--color-navy-ink)] hover:bg-[var(--color-gold-soft)] hover:text-[var(--color-navy-ink)] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-navy-ink)]"
-            >
-              Shop the atelier
-            </Link>
-            <Link
-              href="/about"
-              className="inline-flex items-center gap-2 text-[12px] sm:text-[13px] tracking-[0.22em] uppercase text-[var(--color-ivory)] hover:text-[var(--color-gold-soft)] transition-colors"
-            >
-              Our craft
-              <span aria-hidden="true">→</span>
-            </Link>
+            <h1 className="mt-5 max-w-2xl text-[42px] font-light leading-[1.02] tracking-[-0.04em] text-[var(--color-navy-ink)] sm:text-[64px] lg:text-[70px]">
+              Hand-stitched chikankari, made for the way you live.
+            </h1>
+
+            <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-[var(--color-charcoal)]/78 sm:text-[16px]">
+              Anarkalis, kurta sets and dupattas embroidered by master karigars in
+              the old by-lanes of Lucknow — heirloom craft, quietly modern.
+            </p>
+
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <Link
+                href="/collections"
+                className="inline-flex min-h-12 items-center justify-center bg-[var(--color-navy-ink)] px-7 text-[11px] font-semibold uppercase tracking-[0.32em] text-[var(--color-ivory)] transition hover:bg-[var(--color-navy)] sm:px-9"
+              >
+                Shop the atelier
+              </Link>
+
+              <Link
+                href="/about"
+                className="inline-flex min-h-12 items-center justify-center px-1 text-[11px] font-semibold uppercase tracking-[0.32em] text-[var(--color-navy-ink)] transition hover:text-[var(--color-gold-deep)]"
+              >
+                Our craft →
+              </Link>
+            </div>
+
+            <div className="mt-10 grid grid-cols-3 gap-4 border-t border-[var(--color-line)] pt-6">
+              <div>
+                <p className="text-[9px] uppercase tracking-[0.34em] text-[var(--color-gold-deep)]">
+                  Karigars
+                </p>
+                <p className="mt-2 text-[18px] text-[var(--color-navy-ink)]">120+</p>
+              </div>
+
+              <div>
+                <p className="text-[9px] uppercase tracking-[0.34em] text-[var(--color-gold-deep)]">
+                  Years
+                </p>
+                <p className="mt-2 text-[18px] text-[var(--color-navy-ink)]">40</p>
+              </div>
+
+              <div>
+                <p className="text-[9px] uppercase tracking-[0.34em] text-[var(--color-gold-deep)]">
+                  Pieces
+                </p>
+                <p className="mt-2 text-[18px] text-[var(--color-navy-ink)]">5,000</p>
+              </div>
+            </div>
           </div>
         </div>
       </Container>
