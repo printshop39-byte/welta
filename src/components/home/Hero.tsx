@@ -38,16 +38,19 @@ export function Hero() {
               the old by-lanes of Lucknow — heirloom craft, quietly modern.
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="mt-8 flex flex-wrap items-center gap-5">
               <Link
                 href="/collections"
-                className="inline-flex min-h-12 items-center justify-center bg-[var(--color-navy-ink)] px-7 text-[11px] font-semibold uppercase tracking-[0.32em] text-[var(--color-ivory)] transition hover:bg-[var(--color-navy)] sm:px-9"
+                aria-label="Shop Welta Chikankari collections"
+                className="inline-flex min-h-12 items-center justify-center bg-[var(--color-navy-ink)] px-7 text-[11px] font-semibold uppercase tracking-[0.32em] shadow-sm transition hover:bg-[var(--color-navy)] sm:px-9"
+                style={{ color: "#FBF7EF" }}
               >
-                Shop the atelier
+                <span style={{ color: "#FBF7EF" }}>Shop the atelier</span>
               </Link>
 
               <Link
                 href="/about"
+                aria-label="Read about Welta Chikankari craft"
                 className="inline-flex min-h-12 items-center justify-center px-1 text-[11px] font-semibold uppercase tracking-[0.32em] text-[var(--color-navy-ink)] transition hover:text-[var(--color-gold-deep)]"
               >
                 Our craft →
