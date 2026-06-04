@@ -128,14 +128,19 @@ export function CartDrawer() {
             </Link>
           </div>
         ) : (
-          <>
-            <ul className="flex-1 overflow-y-auto px-5 sm:px-6 divide-y divide-[var(--color-line)]">
+          // Items + footer share one scrollable column. The footer
+          // follows the items in normal flow (mt-6 / border-t / pt-6),
+          // so with 1–2 items it sits right under them — no flex spacer
+          // pushing it to the bottom. With many items the whole column
+          // scrolls naturally.
+          <div className="flex-1 overflow-y-auto px-5 sm:px-6 py-6">
+            <ul className="divide-y divide-[var(--color-line)]">
               {items.map((item) => (
                 <DrawerLine key={item.key} item={item} />
               ))}
             </ul>
 
-            <div className="border-t border-[var(--color-line)] px-5 sm:px-6 py-5 bg-[var(--color-ivory-soft)]">
+            <div className="mt-6 border-t border-[var(--color-line)] pt-6">
               <div className="flex items-center justify-between text-sm">
                 <span className="text-[var(--color-muted)] uppercase tracking-[0.18em] text-xs">
                   Subtotal
@@ -171,7 +176,7 @@ export function CartDrawer() {
                 Continue shopping
               </button>
             </div>
-          </>
+          </div>
         )}
       </div>
     </div>
