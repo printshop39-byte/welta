@@ -429,10 +429,9 @@ export default function SizeGuidePage() {
               Our personal styling assistant will guide you through the
               measurement confirmation.
             </p>
-            {/* Handwritten sign-off — Architects Daughter via the
-                . utility. Reads as the
-                atelier's signature at the foot of a letter. */}
-            <p className=" mt-6 text-[18px] sm:text-[20px] text-[var(--color-gold-deep)]">
+            {/* Atelier sign-off — reads as the signature at the foot of
+                a letter. */}
+            <p className="mt-6 text-[18px] sm:text-[20px] text-[var(--color-gold-deep)]">
               Pure heritage. Perfect fit. Team Welta.
             </p>
           </div>
