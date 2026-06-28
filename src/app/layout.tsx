@@ -46,7 +46,7 @@ const kalam = Kalam({
 });
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.weltachikankari.in";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.welta.in";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

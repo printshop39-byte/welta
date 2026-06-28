@@ -11,8 +11,11 @@ const shopLinks = [
 
 const supportLinks = [
   { href: "/about", label: "Our Story" },
+  { href: "/about-craft", label: "The Craft" },
   { href: "/contact", label: "Contact" },
   { href: "/size-guide", label: "Size Guide & Custom Fit" },
+  { href: "/track-order", label: "Track Order" },
+  { href: "/faq", label: "FAQ" },
   { href: "/about#care", label: "Care Guide" },
   { href: "/about#shipping", label: "Shipping & Returns" },
 ];

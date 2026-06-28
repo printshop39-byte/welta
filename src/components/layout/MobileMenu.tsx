@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { createPortal } from "react-dom";
 import { useEffect, useState } from "react";
 
 type NavLink = { href: string; label: string };
@@ -41,8 +42,13 @@ export function MobileMenu({ links }: { links: NavLink[] }) {
         </svg>
       </button>
 
-      {open && (
-        <div id="mobile-menu-panel" className="fixed inset-0 z-[80] lg:hidden" role="dialog" aria-modal="true" aria-label="Mobile navigation menu">
+      {/* Portalled to <body>: the sticky header's backdrop-filter establishes
+          a containing block for fixed descendants, which otherwise clips this
+          overlay to the header's height. Rendering at the document root keeps
+          it full-viewport. Styling/logic unchanged. */}
+      {open &&
+        createPortal(
+          <div id="mobile-menu-panel" className="fixed inset-0 z-[80] lg:hidden" role="dialog" aria-modal="true" aria-label="Mobile navigation menu">
           <button
             type="button"
             aria-label="Close menu"
@@ -92,11 +98,18 @@ export function MobileMenu({ links }: { links: NavLink[] }) {
                 <Link href="/contact" onClick={() => setOpen(false)} className="block">
                   Contact us
                 </Link>
+                <Link href="/account" onClick={() => setOpen(false)} className="block">
+                  My Welta
+                </Link>
+                <Link href="/faq" onClick={() => setOpen(false)} className="block">
+                  Help &amp; FAQ
+                </Link>
               </div>
             </nav>
           </div>
-        </div>
-      )}
+        </div>,
+          document.body,
+        )}
     </>
   );
 }

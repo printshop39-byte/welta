@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-  "https://weltachikankari.in";
+  "https://www.welta.in";
 
 /**
  * robots.txt — generated from this file at build time.
