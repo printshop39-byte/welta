@@ -1,5 +1,5 @@
 import { Analytics } from "@vercel/analytics/next";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import {
   Architects_Daughter,
   Cormorant_Garamond,
@@ -87,6 +87,19 @@ export const metadata: Metadata = {
       "Premium handcrafted Lucknowi chikankari, made by master karigars in Lucknow.",
     images: ["/og-default.jpg"],
   },
+  icons: {
+    icon: "/icon-192.png",
+    apple: "/apple-touch-icon.png",
+  },
+  appleWebApp: {
+    capable: true,
+    title: "Welta",
+    statusBarStyle: "default",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#163B2F",
 };
 
 export default function RootLayout({

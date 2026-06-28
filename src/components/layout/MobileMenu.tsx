@@ -105,6 +105,9 @@ export function MobileMenu({ links }: { links: NavLink[] }) {
                   Help &amp; FAQ
                 </Link>
               </div>
+              <p className="mt-6 pt-6 border-t border-[var(--color-line)] text-[12px] leading-relaxed text-[var(--color-muted)]">
+                Add Welta to your home screen for quick shopping.
+              </p>
             </nav>
           </div>
         </div>,
